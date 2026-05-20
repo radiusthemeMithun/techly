@@ -29,41 +29,59 @@ class Pagination {
 			$links[] = $paged + 2;
 			$links[] = $paged + 1;
 		}
-		echo '<div class="'. techly_option('rt_blog_pagination_style') .'"><ul class="pagination-list d-flex flex-wrap align-items-center justify-content-center column-gap-8">' . "\n";
-
-		/**	Previous Post Link */
-		if ( get_previous_posts_link() )
-			printf( '<li>%s</li>' . "\n", get_previous_posts_link( '<i class="icon-rt-right"></i>' ) );
+		echo '<div class="'. esc_attr ( techly_option('rt_blog_pagination_style') ) .'"><ul class="pagination-list d-flex flex-wrap align-items-center justify-content-center column-gap-8">' . "\n";
+		if ( get_previous_posts_link() ) {
+			?>
+            <li><?php techly_html( get_previous_posts_link( '<i class="icon-rt-right"></i>' ) ); ?></li>
+			<?php
+		}
 
 		/**	Link to first page, plus ellipses if necessary */
-		if ( ! in_array( 1, $links ) ) {
-			$class = 1 == $paged ? ' class="active"' : '';
 
-			printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+			if ( ! in_array( 1, $links ) ) {
+			$class = ( 1 == $paged ) ? 'active' : '';
 
-			if ( ! in_array( 2, $links ) )
+			printf( '<li class="%s"><a href="%s">%s</a></li>' . "\n",
+				esc_attr( $class ),
+				esc_url( get_pagenum_link( 1 ) ),
+				esc_html__( '1', 'techly' )
+			);
+
+			if ( ! in_array( 2, $links ) ) {
 				echo '<li>...</li>';
+			}
 		}
 
 		/**	Link to current page, plus 2 pages in either direction if necessary */
+
 		sort( $links );
 		foreach ( (array) $links as $link ) {
-			$class = $paged == $link ? ' class="active"' : '';
-			printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+			$class = ( $paged == $link ) ? 'active' : '';
+			printf( '<li class="%s"><a href="%s">%s</a></li>' . "\n",
+				esc_attr( $class ),
+				esc_url( get_pagenum_link( $link ) ),
+				esc_html( $link )
+			);
 		}
 
 		/**	Link to last page, plus ellipses if necessary */
-		if ( ! in_array( $max, $links ) ) {
-			if ( ! in_array( $max - 1, $links ) )
-				echo '<li>...</li>' . "\n";
 
-			$class = $paged == $max ? ' class="active"' : '';
-			printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+		if ( ! in_array( $max, $links ) ) {
+			if ( ! in_array( $max - 1, $links ) ) {
+				echo '<li>...</li>' . "\n";
+			}
+
+			$class = ($paged == $max) ? 'active' : '';
+			printf( '<li%s><a href="%s">%s</a></li>' . "\n",
+                esc_attr( $class ),
+                esc_url( get_pagenum_link( $max ) ),
+                esc_html( $max )
+            );
 		}
 
 		/**	Next Post Link */
 		if ( get_next_posts_link() )
-			printf( '<li>%s</li>' . "\n", get_next_posts_link( '<i class="icon-rt-right"></i>' ) );
+			printf( '<li>%s</li>' . "\n", get_next_posts_link( '<i class="icon-rt-right"></i>' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		echo '</ul></div>' . "\n";
 	}

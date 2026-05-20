@@ -5,6 +5,9 @@ namespace RT\Techly\Setup;
 use RT\Techly\Helpers\Constants;
 use RT\Techly\Options\Opt;
 use RT\Techly\Traits\SingletonTraits;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
  * Enqueue.

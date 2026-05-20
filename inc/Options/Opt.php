@@ -4,7 +4,9 @@ namespace RT\Techly\Options;
 
 use RT\Techly\Api\Customizer;
 use RT\Techly\Traits\SingletonTraits;
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 class Opt {
 
 	use SingletonTraits;

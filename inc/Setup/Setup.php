@@ -3,6 +3,9 @@
 namespace RT\Techly\Setup;
 
 use RT\Techly\Traits\SingletonTraits;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Setup {
 	use SingletonTraits;

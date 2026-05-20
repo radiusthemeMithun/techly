@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 /**
  * Template part for displaying header offcanvas
  *
@@ -15,13 +18,13 @@ $topinfo = ( techly_option( 'rt_contact_address' ) || techly_option( 'rt_phone' 
 
 <div class="techly-offcanvas-drawer">
 	<div class="offcanvas-logo">
-		<?php echo techly_site_logo( $logo_h1 ); ?>
+		<?php echo techly_site_logo( $logo_h1 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		<a class="trigger-icon trigger-off-canvas" href="#">×</a>
 	</div>
 	<?php if( techly_option( 'rt_about_label' ) || techly_option( 'rt_about_text' ) ) { ?>
 	<div class="offcanvas-about offcanvas-address">
-		<?php if( techly_option( 'rt_about_label' ) ) { ?><label><?php echo techly_option( 'rt_about_label' ) ?></label><?php } ?>
-		<?php if( techly_option( 'rt_about_text' ) ) { ?><p><?php echo techly_option( 'rt_about_text' ) ?></p><?php } ?>
+		<?php if( techly_option( 'rt_about_label' ) ) { ?><label><?php echo esc_html( techly_option( 'rt_about_label' ) ) ?></label><?php } ?>
+		<?php if( techly_option( 'rt_about_text' ) ) { ?><p><?php techly_html( techly_option( 'rt_about_text' ), false ); ?></p><?php } ?>
 	</div>
 	<?php } ?>
 	<nav class="offcanvas-navigation" role="navigation">
@@ -39,7 +42,7 @@ $topinfo = ( techly_option( 'rt_contact_address' ) || techly_option( 'rt_phone' 
 
 	<div class="offcanvas-address">
 		<?php if( $topinfo ) { ?>
-			<?php if( techly_option( 'rt_contact_info_label' ) ) { ?><label><?php echo techly_option( 'rt_contact_info_label' ) ?></label><?php } ?>
+			<?php if( techly_option( 'rt_contact_info_label' ) ) { ?><label><?php echo esc_html( techly_option( 'rt_contact_info_label' ) ) ?></label><?php } ?>
 			<ul class="offcanvas-info">
 				<?php if( techly_option( 'rt_contact_address' ) ) { ?>
 					<li><i class="icon-rt-map"></i><?php techly_html( techly_option( 'rt_contact_address' ) , false );?> </li>

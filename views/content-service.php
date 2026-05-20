@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 /**
  * Template part for displaying service
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -15,10 +18,6 @@ if ( !empty( $rt_service_icon ) ) {
 }
 
 $service_icon_bg    = get_post_meta( $id, 'rt_service_color', true );
-$service_bg = "";
-if( !empty( $service_icon_bg ) ) {
-	$service_bg = 'style="color: ' . $service_icon_bg . '"';
-}
 
 $content = get_the_content();
 $content = apply_filters( 'the_content', $content );
@@ -29,9 +28,7 @@ $content = wp_trim_words( get_the_excerpt(), techly_option( 'rt_service_excerpt_
 	<div class="service-item <?php echo esc_attr( $icon_class ); ?>">
 		<div class="service-thumbs">
 			<?php if (!empty( $rt_service_icon )  ) { ?>
-				<div class="service-icon">
-					<i <?php echo wp_specialchars_decode( esc_attr( $service_bg ), ENT_COMPAT ); ?> class="<?php techly_html( $rt_service_icon , false );?>"></i>
-				</div>
+				<div class="service-icon"<?php if ( ! empty( $service_icon_bg ) ) { ?> style="color: <?php echo esc_attr( $service_icon_bg ); ?>"<?php } ?>><i class="<?php techly_html( $rt_service_icon , false );?>"></i></div>
 			<?php } else {
 				techly_post_thumbnail('full');
 			} ?>

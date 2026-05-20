@@ -22,4 +22,3 @@ if( function_exists( 'bcn_display') ){
 	techly_breadcrumb();
 	echo '</div></div>';
 }
-

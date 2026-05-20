@@ -179,19 +179,19 @@ class Project extends Customizer {
 			],
 
 			'rt_project_pagination' => [
-				'label'   => __( 'Show Pagination', 'techly-core' ),
+				'label'   => __( 'Show Pagination', 'techly' ),
 				'type'    => 'switch',
 				'default' => '1',
 			],
 
 			'project_prev_text' => [
-				'label'   => __( 'Previous Project Text', 'techly-core' ),
+				'label'   => __( 'Previous Project Text', 'techly' ),
 				'type'    => 'text',
 				'default' => '',
 			],
 
 			'project_next_text' => [
-				'label'   => __( 'Next Project Text', 'techly-core' ),
+				'label'   => __( 'Next Project Text', 'techly' ),
 				'type'    => 'text',
 				'default' => '',
 			],

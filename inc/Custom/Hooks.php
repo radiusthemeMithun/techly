@@ -5,6 +5,9 @@ namespace RT\Techly\Custom;
 use RT\Techly\Helpers\Fns;
 use RT\Techly\Traits\SingletonTraits;
 use RT\Techly\Options\Opt;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
  * Extras.

@@ -929,57 +929,57 @@ if ( ! function_exists( 'techly_post_thumbnail' ) ) {
 		?>
 		<div class="post-thumbnail-wrap">
 
-			<?php $swiper_data=array(
-				'slidesPerView' 	=>1,
-				'centeredSlides'	=>false,
-				'loop'				=>true,
-				'spaceBetween'		=>20,
-				'slideToClickedSlide' =>true,
-				'slidesPerGroup' => 1,
-				'autoplay'				=>array(
-					'delay'  => 1,
-				),
-				'speed'      =>500,
-				'breakpoints' =>array(
-					'0'    =>array('slidesPerView' =>1),
-					'425'    =>array('slidesPerView' =>1),
-					'576'    =>array('slidesPerView' =>1),
-					'768'    =>array('slidesPerView' =>1),
-					'992'    =>array('slidesPerView' =>1),
-					'1200'    =>array('slidesPerView' =>1),
-					'1600'    =>array('slidesPerView' =>1)
-				),
-				'auto'   =>false
-			);
+		<?php $swiper_data=array(
+			'slidesPerView' 	=>1,
+			'centeredSlides'	=>false,
+			'loop'				=>true,
+			'spaceBetween'		=>20,
+			'slideToClickedSlide' =>true,
+			'slidesPerGroup' => 1,
+			'autoplay'				=>array(
+				'delay'  => 1,
+			),
+			'speed'      =>500,
+			'breakpoints' =>array(
+				'0'    =>array('slidesPerView' =>1),
+				'425'    =>array('slidesPerView' =>1),
+				'576'    =>array('slidesPerView' =>1),
+				'768'    =>array('slidesPerView' =>1),
+				'992'    =>array('slidesPerView' =>1),
+				'1200'    =>array('slidesPerView' =>1),
+				'1600'    =>array('slidesPerView' =>1)
+			),
+			'auto'   =>false
+		);
 
-			$swiper_data = json_encode( $swiper_data );
-			$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
-			$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
-			if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
-				<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
-					<div class="swiper-wrapper">
-						<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
-							<div class="swiper-slide">
-								<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
-								?>
-							</div>
-						<?php } ?>
-					</div>
-					<div class="swiper-navigation">
-						<div class="swiper-button swiper-button-prev"><i class="icon-rt-right-arrow-2"></i></div>
-						<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow-2"></i></div>
-					</div>
+		$swiper_data = json_encode( $swiper_data );
+		$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
+		$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
+		if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
+			<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
+				<div class="swiper-wrapper">
+					<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
+						<div class="swiper-slide">
+							<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
+							?>
+						</div>
+					<?php } ?>
 				</div>
-			<?php } else { ?>
-				<figure class="post-thumbnail">
-					<a class="post-thumb-link alignwide" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1"><?php the_post_thumbnail( $size ); ?></a>
-				</figure><!-- .post-thumbnail -->
+				<div class="swiper-navigation">
+					<div class="swiper-button swiper-button-prev"><i class="icon-rt-right-arrow-2"></i></div>
+					<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow-2"></i></div>
+				</div>
+			</div>
+		<?php } else { ?>
+			<figure class="post-thumbnail">
+				<a class="post-thumb-link alignwide" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1"><?php the_post_thumbnail( $size ); ?></a>
+			</figure><!-- .post-thumbnail -->
 
-				<?php $rt_youtube_link = get_post_meta( get_the_ID(), 'rt_youtube_link', true );
-				if ( techly_option( 'rt_video_visibility' ) == 1 && ( 'video' == get_post_format( get_the_ID() ) ) && !empty( $rt_youtube_link ) ) { ?>
-					<div class="rt-video"><a class="popup-youtube video-popup-icon" href="<?php echo esc_url( $rt_youtube_link );?>"><i class="icon-rt-play"></i></a></div>
-				<?php } ?>
+			<?php $rt_youtube_link = get_post_meta( get_the_ID(), 'rt_youtube_link', true );
+			if ( techly_option( 'rt_video_visibility' ) == 1 && ( 'video' == get_post_format( get_the_ID() ) ) && !empty( $rt_youtube_link ) ) { ?>
+				<div class="rt-video"><a class="popup-youtube video-popup-icon" href="<?php echo esc_url( $rt_youtube_link );?>"><i class="icon-rt-play"></i></a></div>
 			<?php } ?>
+		<?php } ?>
 
 		</div>
 		<?php
@@ -997,58 +997,58 @@ if ( ! function_exists( 'techly_post_single_thumbnail' ) ) {
 		}
 		?>
 		<div class="post-thumbnail-wrap single-post-thumbnail">
-			<?php $swiper_data=array(
-				'slidesPerView' 	=>1,
-				'centeredSlides'	=>false,
-				'loop'				=>true,
-				'spaceBetween'		=>20,
-				'slideToClickedSlide' =>true,
-				'slidesPerGroup' => 1,
-				'autoplay'				=>array(
-					'delay'  => 1,
-				),
-				'speed'      =>500,
-				'breakpoints' =>array(
-					'0'    =>array('slidesPerView' =>1),
-					'425'    =>array('slidesPerView' =>1),
-					'576'    =>array('slidesPerView' =>1),
-					'768'    =>array('slidesPerView' =>1),
-					'992'    =>array('slidesPerView' =>1),
-					'1200'    =>array('slidesPerView' =>1),
-					'1600'    =>array('slidesPerView' =>1)
-				),
-				'auto'   =>false
-			);
+		<?php $swiper_data=array(
+			'slidesPerView' 	=>1,
+			'centeredSlides'	=>false,
+			'loop'				=>true,
+			'spaceBetween'		=>20,
+			'slideToClickedSlide' =>true,
+			'slidesPerGroup' => 1,
+			'autoplay'				=>array(
+				'delay'  => 1,
+			),
+			'speed'      =>500,
+			'breakpoints' =>array(
+				'0'    =>array('slidesPerView' =>1),
+				'425'    =>array('slidesPerView' =>1),
+				'576'    =>array('slidesPerView' =>1),
+				'768'    =>array('slidesPerView' =>1),
+				'992'    =>array('slidesPerView' =>1),
+				'1200'    =>array('slidesPerView' =>1),
+				'1600'    =>array('slidesPerView' =>1)
+			),
+			'auto'   =>false
+		);
 
-			$swiper_data = json_encode( $swiper_data );
-			$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
-			$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
-			if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
-				<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
-					<div class="swiper-wrapper">
-						<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
-							<div class="swiper-slide">
-								<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
-								?>
-							</div>
-						<?php } ?>
-					</div>
-					<div class="swiper-navigation">
-						<div class="swiper-button swiper-button-prev"><i class="icon-rt-left-arrow"></i></div>
-						<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow"></i></div>
-					</div>
+		$swiper_data = json_encode( $swiper_data );
+		$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
+		$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
+		if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
+			<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
+				<div class="swiper-wrapper">
+					<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
+						<div class="swiper-slide">
+							<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
+							?>
+						</div>
+					<?php } ?>
 				</div>
-			<?php } else { ?>
-				<figure class="post-thumbnail">
-					<?php the_post_thumbnail( $size ); ?>
-					<?php edit_post_link( 'Edit' ); ?>
-				</figure><!-- .post-thumbnail -->
-				<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) && techly_option( 'rt_single_caption_visibility' ) == 1 ) : ?>
-					<figcaption class="wp-caption-text">
-						<span><?php techly_html( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></span>
-					</figcaption>
-				<?php endif; ?>
-			<?php } ?>
+				<div class="swiper-navigation">
+					<div class="swiper-button swiper-button-prev"><i class="icon-rt-left-arrow"></i></div>
+					<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow"></i></div>
+				</div>
+			</div>
+		<?php } else { ?>
+			<figure class="post-thumbnail">
+				<?php the_post_thumbnail( $size ); ?>
+				<?php edit_post_link( 'Edit' ); ?>
+			</figure><!-- .post-thumbnail -->
+			<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) && techly_option( 'rt_single_caption_visibility' ) == 1 ) : ?>
+				<figcaption class="wp-caption-text">
+					<span><?php techly_html( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></span>
+				</figcaption>
+			<?php endif; ?>
+		<?php } ?>
 		</div>
 		<?php
 	}
@@ -1134,7 +1134,7 @@ if ( ! function_exists( 'techly_post_single_video' ) ) {
 					<div class="embed-responsive">
 						<div class="video-container">
 							<object data="https://www.youtube.com/embed/<?php echo esc_attr( $youtube_id ); ?>"
-							        type="text/html" width="560" height="315"></object>
+									type="text/html" width="560" height="315"></object>
 						</div>
 					</div>
 				</div>
@@ -1269,7 +1269,7 @@ if ( ! function_exists( 'techly_sidebar' ) ) {
 		$sidebar_cols = Fns::sidebar_columns();
 		?>
 		<aside id="sidebar" class="techly-widget-area sidebar-sticky <?php echo esc_attr( $sidebar_cols ) ?>"
-		       role="complementary">
+			   role="complementary">
 			<?php dynamic_sidebar( $sidebar_id ); ?>
 		</aside><!-- #sidebar -->
 		<?php
@@ -1442,7 +1442,7 @@ if ( ! function_exists( 'techly_breadcrumb' ) ) {
 						echo '<span class="title">';
 						esc_html_e( 'Blog', 'techly' );
 						echo '</span>';
-					}
+					} 
 					?>
 				</li>
 			</ul>
@@ -1499,11 +1499,11 @@ function techly_comments_cbf( $comment, $args, $depth ) {
 				</div>
 				<div class="author-info">
 					<div class="author-meta">
-						<?php
+						<?php 
 						printf(
-							'<cite class="fn">%s</cite>',
-							wp_kses_post( get_comment_author_link() )
-						);
+								'<cite class="fn">%s</cite>',
+								wp_kses_post( get_comment_author_link() )
+							); 
 						?>
 
 
@@ -1512,10 +1512,10 @@ function techly_comments_cbf( $comment, $args, $depth ) {
 
 								printf(
 								/* translators: 1: date, 2: time */
-									esc_html__( '%1$s at %2$s', 'techly' ),
-									esc_html( get_comment_date() ),
-									esc_html( get_comment_time() )
-								); ?>
+								esc_html__( '%1$s at %2$s', 'techly' ),
+								esc_html( get_comment_date() ),
+								esc_html( get_comment_time() )
+							); ?>
 							</a><?php
 							edit_comment_link( __( 'Edit', 'techly' ), '  ', '' ); ?>
 						</div><!-- .comment-meta -->
@@ -1580,7 +1580,7 @@ if ( ! function_exists( 'techly_hanburger' ) ) {
 					<!-- <span></span>
 					<span></span>
 					<span></span> -->
-
+					
 					<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="6" height="6" rx="2" fill="currentColor"/>
 						<rect y="11" width="6" height="6" rx="2" fill="currentColor"/>

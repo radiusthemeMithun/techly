@@ -8,6 +8,9 @@
 namespace RT\Techly\Api;
 
 use RT\Techly\Traits\SingletonTraits;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
  * Customizer class

@@ -7,6 +7,9 @@
  */
 namespace RT\Techly\Modules;
 use RT\Techly\Traits\SingletonTraits;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class AjaxSearch{
 

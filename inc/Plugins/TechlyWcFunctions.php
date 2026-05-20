@@ -1,5 +1,8 @@
 <?php
 namespace RT\Techly\Plugins;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 /**
  * @author  RadiusTheme
  * @since   1.0
@@ -274,22 +277,27 @@ class TechlyWcFunctions {
 			}
 		}
 
+	
+
+
 		if ( $in_cart ) {
-			echo sprintf( '<a rel="nofollow" title="%s" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s">' . $html . '</a>',
+			echo sprintf( '<a rel="nofollow" title="%s" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s">%s</a>',
 				esc_attr( $product->add_to_cart_text() ),
 				esc_url( wc_get_cart_url() ),
 				esc_attr( isset( $quantity ) ? $quantity : 1 ),
 				esc_attr( $product->get_id() ),
-				esc_attr( $product->get_sku() )
+				esc_attr( $product->get_sku() ),
+				wp_kses_post( $html )
 			);
 		} else {
-			echo sprintf( '<a rel="nofollow" title="%s" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s">' . $html . '</a>',
+			echo sprintf( '<a rel="nofollow" title="%s" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s">%s</a>',
 				esc_attr( $product->add_to_cart_text() ),
 				esc_url( $product->add_to_cart_url() ),
 				esc_attr( isset( $quantity ) ? $quantity : 1 ),
 				esc_attr( $product->get_id() ),
 				esc_attr( $product->get_sku() ),
-				esc_attr( isset( $class ) ? $class : 'action-cart' )
+				esc_attr( isset( $class ) ? $class : 'action-cart' ),
+				wp_kses_post( $html )
 			);
 		}
 	}

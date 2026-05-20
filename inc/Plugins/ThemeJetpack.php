@@ -10,6 +10,10 @@ namespace RT\Techly\Plugins;
 use RT\Techly\Traits\SingletonTraits;
 use Jetpack;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 class ThemeJetpack {
 	use SingletonTraits;
 

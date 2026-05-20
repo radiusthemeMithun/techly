@@ -6,6 +6,10 @@ use RT\Techly\Helpers\Fns;
 use RT\Techly\Options\Opt;
 use RT\Techly\Traits\SingletonTraits;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 class DynamicStyles {
 
 	use SingletonTraits;
@@ -72,7 +76,7 @@ class DynamicStyles {
 		--rt-secondary-rgb: 	<?php echo esc_html( Fns::hex2rgb( $secondary_color ) ); ?>;
 		--rt-tertiary-rgb: 		<?php echo esc_html( Fns::hex2rgb( $tertiary_color ) ); ?>;
 
-		--rt-container-width: 	<?php echo techly_option( 'container_width' ); ?>px;
+		--rt-container-width: 	<?php echo wp_kses_post( techly_option('container_width')); ?>px;
 		}
 
 		body {
@@ -97,8 +101,8 @@ class DynamicStyles {
 	 */
 	protected function topbar_css() {
 		$_topbar_active_color = techly_option( 'rt_topbar_active_color' );
-		echo self::css( 'body .site-header .techly-topbar .topbar-container *:not(.dropdown-menu *)', 'color', 'rt_topbar_color' );
-		echo self::css( 'body .site-header .techly-topbar .topbar-container svg:not(.dropdown-menu svg)', 'fill', 'rt_topbar_color' );
+		echo wp_kses_post( self::css( 'body .site-header .techly-topbar .topbar-container *:not(.dropdown-menu *)', 'color', 'rt_topbar_color' ) );
+		echo wp_kses_post( self::css( 'body .site-header .techly-topbar .topbar-container svg:not(.dropdown-menu svg)', 'fill', 'rt_topbar_color' ) );
 
 		if ( ! empty( $_topbar_active_color ) ) : ?>
 			body .site-header .techly-topbar .topbar-container a:hover:not(.dropdown-menu a:hover),
@@ -118,7 +122,8 @@ class DynamicStyles {
 		<?php endif; ?>
 
 		<?php
-		echo self::css( 'body .techly-topbar', 'background-color', 'rt_topbar_bg_color' );
+
+		echo wp_kses_post( self::css( 'body .techly-topbar', 'background-color', 'rt_topbar_bg_color' ) );
 
 	}
 
@@ -402,23 +407,23 @@ class DynamicStyles {
 		 */
 		protected function footer_css() {
 			if ( techly_option( 'rt_footer_width' ) && techly_option( 'rt_footer_max_width' ) > 1400 ) {
-				echo self::css( '.site-footer .footer-container', 'width', 'rt_footer_max_width', 'px;max-width: 100%' );
+				echo wp_kses_post( self::css( '.site-footer .footer-container', 'width', 'rt_footer_max_width', 'px;max-width: 100%' ) );
 			}
 
-			echo self::css( 'body .site-footer *:not(a), body .site-footer .widget', 'color', 'rt_footer_text_color' );
+			echo wp_kses_post( self::css( 'body .site-footer *:not(a), body .site-footer .widget', 'color', 'rt_footer_text_color' ) );
 
-			echo self::css( 'body .site-footer .footer-sidebar a, body .site-footer .footer-sidebar .widget a, body .site-footer .footer-sidebar .phone-no a', 'color', 'rt_footer_link_color' );
+			echo wp_kses_post( self::css( 'body .site-footer .footer-sidebar a, body .site-footer .footer-sidebar .widget a, body .site-footer .footer-sidebar .phone-no a', 'color', 'rt_footer_link_color' ) );
 
-			echo self::css( 'body .site-footer a:hover, body .site-footer .footer-sidebar a:hover', 'color', 'rt_footer_link_hover_color' );
+			echo wp_kses_post( self::css( 'body .site-footer a:hover, body .site-footer .footer-sidebar a:hover', 'color', 'rt_footer_link_hover_color' ) );
 
-			echo self::css( 'body .site-footer .footer-widgets-wrapper', 'background-color', 'rt_footer_bg' );
-			echo self::css( 'body .site-footer .widget :is(td, th, select, .search-box)', 'border-color', 'rt_footer_input_border_color' );
-			echo self::css( 'body .site-footer .widget-title, .techly-footer-2 .site-footer .widget-title', 'color', 'rt_footer_widget_title_color' );
+			echo wp_kses_post( self::css( 'body .site-footer .footer-widgets-wrapper', 'background-color', 'rt_footer_bg' ) );
+			echo wp_kses_post( self::css( 'body .site-footer .widget :is(td, th, select, .search-box)', 'border-color', 'rt_footer_input_border_color' ) );
+			echo wp_kses_post( self::css( 'body .site-footer .widget-title, .techly-footer-2 .site-footer .widget-title', 'color', 'rt_footer_widget_title_color' ) );
 
-			echo self::css( 'body .site-footer .footer-copyright-wrapper, body .site-footer label, body .footer-copyright-wrapper .copyright-text', 'color', 'rt_copyright_text_color' );
-			echo self::css( 'body .site-footer .footer-copyright-wrapper a', 'color', 'rt_copyright_link_color' );
-			echo self::css( 'body .site-footer .footer-copyright-wrapper a:hover', 'color', 'rt_copyright_link_hover_color' );
-			echo self::css( 'body .site-footer .footer-copyright-wrapper', 'background-color', 'rt_copyright_bg' );
+			echo wp_kses_post( self::css( 'body .site-footer .footer-copyright-wrapper, body .site-footer label, body .footer-copyright-wrapper .copyright-text', 'color', 'rt_copyright_text_color' ) );
+			echo wp_kses_post( self::css( 'body .site-footer .footer-copyright-wrapper a', 'color', 'rt_copyright_link_color' ) );
+			echo wp_kses_post( self::css( 'body .site-footer .footer-copyright-wrapper a:hover', 'color', 'rt_copyright_link_hover_color' ) );
+			echo wp_kses_post( self::css( 'body .site-footer .footer-copyright-wrapper', 'background-color', 'rt_copyright_bg' ) );
 		}
 
 
@@ -427,12 +432,14 @@ class DynamicStyles {
 		 * @return void
 		 */
 		protected
+		
+
 		function site_fonts() {
 
 			$typo_body           = json_decode( techly_option( 'rt_body_typo' ), true );
 			$typo_menu           = json_decode( techly_option( 'rt_menu_typo' ), true );
 			$typo_heading        = json_decode( techly_option( 'rt_all_heading_typo' ), true );
-			$body_font_family    = $typo_body['font'] ?? 'Mona Sans';
+			$body_font_family    = $typo_body['font'] ?? 'Poppins';
 			$heading_font_family = $typo_heading['font'] ?? $body_font_family;
 			?>
 			:root{
@@ -442,24 +449,24 @@ class DynamicStyles {
 			}
 
 			<?php
-			echo self::font_css( 'body', $typo_body );
-			echo self::font_css( '.site-header', [ 'font' => $typo_menu['font'] ] );
-			echo self::font_css( '.techly-navigation ul li a', [
+			echo wp_kses_post(self::font_css( 'body', $typo_body ) );
+			echo wp_kses_post(self::font_css( '.site-header', [ 'font' => $typo_menu['font'] ] ) );
+			echo wp_kses_post(self::font_css( '.techly-navigation ul li a', [
 				'size'          => $typo_menu['size'],
 				'regularweight' => $typo_menu['regularweight'],
 				'lineheight'    => $typo_menu['lineheight']
-			] );
-			echo self::font_css( '.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6', [
+			] ) );
+			echo wp_kses_post(self::font_css( '.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6', [
 				'font'          => $typo_heading['font'],
 				'regularweight' => $typo_heading['regularweight']
-			] );
+			] ) );
 
 			$heading_fonts = [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ];
 			foreach ( $heading_fonts as $heading ) {
 				$font = json_decode( techly_option( "rt_heading_{$heading}_typo" ), true );
 				if ( ! empty( $font['font'] ) ) {
 					$selector = "$heading, .$heading";
-					echo self::font_css( $selector, $font );
+					echo wp_kses_post(self::font_css( $selector, $font ) );
 				}
 			}
 		}

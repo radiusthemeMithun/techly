@@ -117,12 +117,12 @@ class PostRelated {
 
 
 											if ( ! empty( $meta_list ) && techly_option( 'rt_meta_visibility' ) ) {
-												echo techly_post_meta( [
+												echo wp_kses_post( techly_post_meta( [
 													'with_list'     => true,
 													'with_icon'     => true,
 													'include'       => $meta_list,
 													'author_prefix' => techly_option( 'rt_author_prefix' ),
-												] );
+												] ) );
 											}
 											?>
 										</header>
