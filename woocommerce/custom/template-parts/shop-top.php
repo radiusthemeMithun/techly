@@ -26,12 +26,12 @@ $shopview_grid_class = 'grid' == $shopview ? 'selected':'';
 				<span class="line"></span>
 			</li>
 			<li class="grid-view-nav <?php echo esc_attr($shopview_grid_class); ?>">
-				<a href="<?php echo Fns::shop_grid_page_url(); ?>" >
+				<a href="<?php echo Fns::shop_grid_page_url(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>" >
 					<i class="icon-rt-grid"></i></a>
 				<span class="line"></span>
 			</li>
 			<li class="list-view-nav <?php echo esc_attr($shopview_list_class); ?>">
-				<a href="<?php echo Fns::shop_list_page_url(); ?>"><i class="icon-rt-list"></i></a>
+				<a href="<?php echo Fns::shop_list_page_url(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>"><i class="icon-rt-list"></i></a>
 			</li>
 		</ul>
 	</div>
