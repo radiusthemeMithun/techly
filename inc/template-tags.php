@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 /**
  * Helpers methods
  * List all your static functions you wish to use globally on your theme
@@ -209,12 +212,13 @@ if ( ! function_exists( 'techly_custom_menu_cb' ) ) {
 	function techly_custom_menu_cb( $args ) {
 		extract( $args );
 		$add_menu_link = admin_url( 'nav-menus.php' );
-		$menu_text     = sprintf( __( "Add %s Menu", "techly" ), $theme_location );
+		$menu_text     = sprintf( /* translators: %s: Theme Location */ __( "Add %s Menu", "techly" ), $theme_location );
 		__( 'Add a menu', 'techly' );
 		if ( ! current_user_can( 'manage_options' ) ) {
 			$add_menu_link = home_url();
 			$menu_text     = __( 'Home', 'techly' );
 		}
+
 
 		// see wp-includes/nav-menu-template.php for available arguments
 
@@ -296,7 +300,7 @@ if ( ! function_exists( 'techly_menu_icons_group' ) ) {
 										</span>
 									</span>
 								</span>
-								<span class="button-text"><?php if ( techly_option( 'rt_get_login_label' ) ) { ?><?php echo techly_option( 'rt_get_login_label' ) ?><?php } ?></span>
+								<span class="button-text"><?php if ( techly_option( 'rt_get_login_label' ) ) { ?><?php echo esc_html( techly_option( 'rt_get_login_label' ) ) ?><?php } ?></span>
 							</span>
 						</a>
 					</li>
@@ -424,8 +428,8 @@ if ( ! function_exists( 'techly_posted_by' ) ) {
 	 * @return string
 	 */
 	function techly_posted_by( $prefix = '' ) {
-		return sprintf(
-			esc_html__( '%s %s', 'techly' ),
+		return sprintf( /* translators: 1: Prefix text, 2: Author link */
+			esc_html__( '%1$s %2$s', 'techly' ),
 			$prefix ? '<span class="bypostauthor">' . $prefix . '</span>' : '',
 			'<span class="byline"><a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" rel="author">' . esc_html( get_the_author() ) . '</a></span>'
 		);
@@ -517,7 +521,7 @@ if ( ! function_exists( 'techly_get_img' ) ) {
 				$getimagesize = wp_getimagesize( techly_get_file( $path, true ) );
 				$image_meta   = $getimagesize[3] ?? $image_meta;
 			}
-			echo '<img ' . $image_meta . ' src="' . esc_url( $image_url ) . '"/>';
+			echo '<img ' . wp_kses( $image_meta, [ 'width' => [], 'height' => [], 'alt' => [] ] ) . ' src="' . esc_url( $image_url ) . '"/>';
 		} else {
 			return $image_url;
 		}
@@ -603,12 +607,11 @@ if ( ! function_exists( 'techly_get_social_html' ) ) {
 			}
 			?>
 			<a target="_blank" href="<?php echo esc_url( $item['url'] ) ?>" aria-label="social link">
-				<?php echo techly_get_svg( $id ); ?>
+				echo wp_kses( techly_get_svg( $id ), techly_kses_svg_allowed_tags() );
 			</a>
 			<?php
 		}
-
-		echo ob_get_clean();
+		echo wp_kses_post( ob_get_clean() );
 	}
 }
 
@@ -753,18 +756,18 @@ if ( ! function_exists( 'techly_reading_time' ) ) {
 	function techly_reading_time() {
 		$post_content = get_post()->post_content;
 		$post_content = strip_shortcodes( $post_content );
-		$post_content = strip_tags( $post_content );
+		$post_content = wp_strip_all_tags( $post_content );
 		$word_count   = str_word_count( $post_content );
 		$reading_time = floor( $word_count / 200 );
 
 		if ( $reading_time < 1 ) {
 			$result = esc_html__( 'Less than a minute', 'techly' );
 		} elseif ( $reading_time > 60 ) {
-			$result = sprintf( esc_html__( '%s hours read', 'techly' ), floor( $reading_time / 60 ) );
+			$result = sprintf( /* translators: %s: Reading Time */ esc_html__( '%s hours read', 'techly' ), floor( $reading_time / 60 ) );
 		} else if ( $reading_time == 1 ) {
 			$result = esc_html__( '1 min read', 'techly' );
 		} else {
-			$result = sprintf( esc_html__( '%s mins read', 'techly' ), $reading_time );
+			$result = sprintf( /* translators: %s: Reading Min Time */ esc_html__( '%s mins read', 'techly' ), $reading_time );
 		}
 
 		return '<span class="meta-reading-time meta-item">' . $result . '</span> ';
@@ -875,7 +878,8 @@ if ( ! function_exists( 'techly_post_meta' ) ) {
 		$args = wp_parse_args( $args, $default_args );
 
 		$comments_number = get_comments_number();
-		$comments_text   = sprintf( _n( 'Comment: %s', 'Comments: %s', $comments_number, 'techly' ), number_format_i18n( $comments_number ) );
+		$comments_text   = sprintf( /* translators: %s: Comments Number */ _n( 'Comment: %s', 'Comments: %s', $comments_number, 'techly' ), number_format_i18n( $comments_number ) );
+
 
 		$_meta_data = [];
 		$output     = '';
@@ -925,57 +929,57 @@ if ( ! function_exists( 'techly_post_thumbnail' ) ) {
 		?>
 		<div class="post-thumbnail-wrap">
 
-		<?php $swiper_data=array(
-			'slidesPerView' 	=>1,
-			'centeredSlides'	=>false,
-			'loop'				=>true,
-			'spaceBetween'		=>20,
-			'slideToClickedSlide' =>true,
-			'slidesPerGroup' => 1,
-			'autoplay'				=>array(
-				'delay'  => 1,
-			),
-			'speed'      =>500,
-			'breakpoints' =>array(
-				'0'    =>array('slidesPerView' =>1),
-				'425'    =>array('slidesPerView' =>1),
-				'576'    =>array('slidesPerView' =>1),
-				'768'    =>array('slidesPerView' =>1),
-				'992'    =>array('slidesPerView' =>1),
-				'1200'    =>array('slidesPerView' =>1),
-				'1600'    =>array('slidesPerView' =>1)
-			),
-			'auto'   =>false
-		);
+			<?php $swiper_data=array(
+				'slidesPerView' 	=>1,
+				'centeredSlides'	=>false,
+				'loop'				=>true,
+				'spaceBetween'		=>20,
+				'slideToClickedSlide' =>true,
+				'slidesPerGroup' => 1,
+				'autoplay'				=>array(
+					'delay'  => 1,
+				),
+				'speed'      =>500,
+				'breakpoints' =>array(
+					'0'    =>array('slidesPerView' =>1),
+					'425'    =>array('slidesPerView' =>1),
+					'576'    =>array('slidesPerView' =>1),
+					'768'    =>array('slidesPerView' =>1),
+					'992'    =>array('slidesPerView' =>1),
+					'1200'    =>array('slidesPerView' =>1),
+					'1600'    =>array('slidesPerView' =>1)
+				),
+				'auto'   =>false
+			);
 
-		$swiper_data = json_encode( $swiper_data );
-		$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
-		$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
-		if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
-			<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
-				<div class="swiper-wrapper">
-					<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
-						<div class="swiper-slide">
-							<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
-							?>
-						</div>
-					<?php } ?>
+			$swiper_data = json_encode( $swiper_data );
+			$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
+			$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
+			if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
+				<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
+					<div class="swiper-wrapper">
+						<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
+							<div class="swiper-slide">
+								<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
+								?>
+							</div>
+						<?php } ?>
+					</div>
+					<div class="swiper-navigation">
+						<div class="swiper-button swiper-button-prev"><i class="icon-rt-right-arrow-2"></i></div>
+						<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow-2"></i></div>
+					</div>
 				</div>
-				<div class="swiper-navigation">
-					<div class="swiper-button swiper-button-prev"><i class="icon-rt-right-arrow-2"></i></div>
-					<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow-2"></i></div>
-				</div>
-			</div>
-		<?php } else { ?>
-			<figure class="post-thumbnail">
-				<a class="post-thumb-link alignwide" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1"><?php the_post_thumbnail( $size ); ?></a>
-			</figure><!-- .post-thumbnail -->
+			<?php } else { ?>
+				<figure class="post-thumbnail">
+					<a class="post-thumb-link alignwide" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1"><?php the_post_thumbnail( $size ); ?></a>
+				</figure><!-- .post-thumbnail -->
 
-			<?php $rt_youtube_link = get_post_meta( get_the_ID(), 'rt_youtube_link', true );
-			if ( techly_option( 'rt_video_visibility' ) == 1 && ( 'video' == get_post_format( get_the_ID() ) ) && !empty( $rt_youtube_link ) ) { ?>
-				<div class="rt-video"><a class="popup-youtube video-popup-icon" href="<?php echo esc_url( $rt_youtube_link );?>"><i class="icon-rt-play"></i></a></div>
+				<?php $rt_youtube_link = get_post_meta( get_the_ID(), 'rt_youtube_link', true );
+				if ( techly_option( 'rt_video_visibility' ) == 1 && ( 'video' == get_post_format( get_the_ID() ) ) && !empty( $rt_youtube_link ) ) { ?>
+					<div class="rt-video"><a class="popup-youtube video-popup-icon" href="<?php echo esc_url( $rt_youtube_link );?>"><i class="icon-rt-play"></i></a></div>
+				<?php } ?>
 			<?php } ?>
-		<?php } ?>
 
 		</div>
 		<?php
@@ -993,58 +997,58 @@ if ( ! function_exists( 'techly_post_single_thumbnail' ) ) {
 		}
 		?>
 		<div class="post-thumbnail-wrap single-post-thumbnail">
-		<?php $swiper_data=array(
-			'slidesPerView' 	=>1,
-			'centeredSlides'	=>false,
-			'loop'				=>true,
-			'spaceBetween'		=>20,
-			'slideToClickedSlide' =>true,
-			'slidesPerGroup' => 1,
-			'autoplay'				=>array(
-				'delay'  => 1,
-			),
-			'speed'      =>500,
-			'breakpoints' =>array(
-				'0'    =>array('slidesPerView' =>1),
-				'425'    =>array('slidesPerView' =>1),
-				'576'    =>array('slidesPerView' =>1),
-				'768'    =>array('slidesPerView' =>1),
-				'992'    =>array('slidesPerView' =>1),
-				'1200'    =>array('slidesPerView' =>1),
-				'1600'    =>array('slidesPerView' =>1)
-			),
-			'auto'   =>false
-		);
+			<?php $swiper_data=array(
+				'slidesPerView' 	=>1,
+				'centeredSlides'	=>false,
+				'loop'				=>true,
+				'spaceBetween'		=>20,
+				'slideToClickedSlide' =>true,
+				'slidesPerGroup' => 1,
+				'autoplay'				=>array(
+					'delay'  => 1,
+				),
+				'speed'      =>500,
+				'breakpoints' =>array(
+					'0'    =>array('slidesPerView' =>1),
+					'425'    =>array('slidesPerView' =>1),
+					'576'    =>array('slidesPerView' =>1),
+					'768'    =>array('slidesPerView' =>1),
+					'992'    =>array('slidesPerView' =>1),
+					'1200'    =>array('slidesPerView' =>1),
+					'1600'    =>array('slidesPerView' =>1)
+				),
+				'auto'   =>false
+			);
 
-		$swiper_data = json_encode( $swiper_data );
-		$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
-		$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
-		if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
-			<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
-				<div class="swiper-wrapper">
-					<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
-						<div class="swiper-slide">
-							<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
-							?>
-						</div>
-					<?php } ?>
+			$swiper_data = json_encode( $swiper_data );
+			$rt_post_gallerys_raw = get_post_meta( get_the_ID(), 'rt_post_gallery', true );
+			$rt_post_gallerys = explode( "," , $rt_post_gallerys_raw );
+			if ( !empty( $rt_post_gallerys_raw ) && 'gallery' == get_post_format( get_the_ID() ) ) { ?>
+				<div class="rt-swiper-slider single-post-slider rt-swiper-nav" data-xld = '<?php echo esc_attr( $swiper_data ); ?>'>
+					<div class="swiper-wrapper">
+						<?php foreach( $rt_post_gallerys as $rt_posts_gallery ) { ?>
+							<div class="swiper-slide">
+								<?php echo wp_get_attachment_image( $rt_posts_gallery, $size, "", array( "class" => "img-responsive" ) );
+								?>
+							</div>
+						<?php } ?>
+					</div>
+					<div class="swiper-navigation">
+						<div class="swiper-button swiper-button-prev"><i class="icon-rt-left-arrow"></i></div>
+						<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow"></i></div>
+					</div>
 				</div>
-				<div class="swiper-navigation">
-					<div class="swiper-button swiper-button-prev"><i class="icon-rt-left-arrow"></i></div>
-					<div class="swiper-button swiper-button-next"><i class="icon-rt-right-arrow"></i></div>
-				</div>
-			</div>
-		<?php } else { ?>
-			<figure class="post-thumbnail">
-				<?php the_post_thumbnail( $size ); ?>
-				<?php edit_post_link( 'Edit' ); ?>
-			</figure><!-- .post-thumbnail -->
-			<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) && techly_option( 'rt_single_caption_visibility' ) == 1 ) : ?>
-				<figcaption class="wp-caption-text">
-					<span><?php techly_html( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></span>
-				</figcaption>
-			<?php endif; ?>
-		<?php } ?>
+			<?php } else { ?>
+				<figure class="post-thumbnail">
+					<?php the_post_thumbnail( $size ); ?>
+					<?php edit_post_link( 'Edit' ); ?>
+				</figure><!-- .post-thumbnail -->
+				<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) && techly_option( 'rt_single_caption_visibility' ) == 1 ) : ?>
+					<figcaption class="wp-caption-text">
+						<span><?php techly_html( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></span>
+					</figcaption>
+				<?php endif; ?>
+			<?php } ?>
 		</div>
 		<?php
 	}
@@ -1076,7 +1080,7 @@ if ( ! function_exists( 'techly_entry_footer' ) ) {
 									</span>
 								</span>
 							</span>
-							<span class="button-text"><?php echo techly_readmore_text() ?></span>
+							<span class="button-text"><?php echo wp_kses_post( techly_readmore_text() ) ?></span>
 						</span>
 					</a>
 				</footer>
@@ -1130,7 +1134,7 @@ if ( ! function_exists( 'techly_post_single_video' ) ) {
 					<div class="embed-responsive">
 						<div class="video-container">
 							<object data="https://www.youtube.com/embed/<?php echo esc_attr( $youtube_id ); ?>"
-									type="text/html" width="560" height="315"></object>
+							        type="text/html" width="560" height="315"></object>
 						</div>
 					</div>
 				</div>
@@ -1215,7 +1219,7 @@ if ( ! function_exists( 'techly_single_post_footer_meta' ) ) {
 	function techly_single_post_footer_meta( $class = '', $includes = [ 'tag' ] ) {
 		if ( is_single() && techly_option( 'rt_single_tag_visibility' ) ) : ?>
 			<div class="post-footer-meta <?php echo esc_attr( $class ) ?>">
-				<?php echo techly_post_meta( [
+				<?php echo techly_post_meta( [ // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'with_list' => false,
 					'with_icon' => false,
 					'include'   => $includes,
@@ -1233,7 +1237,7 @@ if ( ! function_exists( 'techly_entry_content' ) ) {
 	function techly_entry_content() {
 		if ( ! is_single() ) {
 			$length = techly_option( 'rt_excerpt_limit' );
-			echo wp_trim_words( get_the_excerpt(), $length );
+			echo wp_kses_post( wp_trim_words( get_the_excerpt(), $length ) );
 		} else {
 			the_content();
 		}
@@ -1265,7 +1269,7 @@ if ( ! function_exists( 'techly_sidebar' ) ) {
 		$sidebar_cols = Fns::sidebar_columns();
 		?>
 		<aside id="sidebar" class="techly-widget-area sidebar-sticky <?php echo esc_attr( $sidebar_cols ) ?>"
-			   role="complementary">
+		       role="complementary">
 			<?php dynamic_sidebar( $sidebar_id ); ?>
 		</aside><!-- #sidebar -->
 		<?php
@@ -1316,7 +1320,7 @@ if ( ! function_exists( 'techly_separate_meta' ) ) {
 	function techly_separate_meta( $class = '', $includes = [ 'category' ] ) {
 		if ( ( ! is_single() && techly_option( 'rt_blog_above_meta_visibility' ) ) || ( is_single() && techly_option( 'rt_single_above_meta_visibility' ) ) ) : ?>
 		<div class="separate-meta <?php echo esc_attr( $class ) ?>">
-			<?php echo techly_post_meta( [
+			<?php echo techly_post_meta( [ // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				'with_list' => false,
 				'with_icon' => false,
 				'include'   => $includes,
@@ -1342,7 +1346,7 @@ if ( ! function_exists( 'techly_single_entry_header' ) ) {
 			}
 
 			if ( ! empty( Fns::single_meta_lists() ) && techly_option( 'rt_single_meta_visibility' ) ) {
-				echo techly_post_meta( [
+				echo techly_post_meta( [ // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'with_list'     => true,
 					'include'       => Fns::single_meta_lists(),
 					'author_prefix' => techly_option( 'rt_author_prefix' ),
@@ -1396,7 +1400,7 @@ if ( ! function_exists( 'techly_breadcrumb' ) ) {
 							echo '<a href="' . esc_url( $catlink ) . '">' . esc_html( $category[0]->cat_name ) . '</a> <span class="raquo"><i class="icon-rt-user-datalist-feature"></i></span> ';
 						}
 						echo '<span class="title">';
-						echo get_the_title();
+						echo esc_html( get_the_title() );
 						echo '</span>';
 					} elseif ( is_category() ) {
 						esc_html_e( 'Posts Category: ', 'techly' );
@@ -1416,7 +1420,7 @@ if ( ! function_exists( 'techly_breadcrumb' ) ) {
 						}
 
 						if ( ! empty( $tt_taxonomy_links ) ) {
-							echo implode( ' <span class="raquo">/</span> ', array_reverse( $tt_taxonomy_links ) ) . ' <span class="raquo"><i class="icon-rt-user-datalist-feature"></i></span> ';
+							echo implode( ' <span class="raquo">/</span> ', array_reverse( $tt_taxonomy_links ) ) . ' <span class="raquo"><i class="icon-rt-user-datalist-feature"></i></span> '; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						}
 
 						echo '<span class="title">';
@@ -1432,13 +1436,13 @@ if ( ! function_exists( 'techly_breadcrumb' ) ) {
 						echo '</span>';
 					} elseif ( is_page() ) {
 						echo '<span class="title">';
-						echo get_the_title();
+						echo esc_html( get_the_title() );
 						echo '</span>';
 					} elseif ( is_home() ) {
 						echo '<span class="title">';
 						esc_html_e( 'Blog', 'techly' );
 						echo '</span>';
-					} 
+					}
 					?>
 				</li>
 			</ul>
@@ -1495,21 +1499,27 @@ function techly_comments_cbf( $comment, $args, $depth ) {
 				</div>
 				<div class="author-info">
 					<div class="author-meta">
-						<?php printf( __( '<cite class="fn">%s</cite>', 'techly' ), get_comment_author_link() ); ?>
+						<?php
+						printf(
+							'<cite class="fn">%s</cite>',
+							wp_kses_post( get_comment_author_link() )
+						);
+						?>
+
 
 						<div class="comment-meta commentmetadata">
-							<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>"><?php
-								/* translators: 1: date, 2: time */
+							<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><?php
+
 								printf(
-									__( '%1$s at %2$s', 'techly' ),
-									get_comment_date(),
-									get_comment_time()
+								/* translators: 1: date, 2: time */
+									esc_html__( '%1$s at %2$s', 'techly' ),
+									esc_html( get_comment_date() ),
+									esc_html( get_comment_time() )
 								); ?>
 							</a><?php
 							edit_comment_link( __( 'Edit', 'techly' ), '  ', '' ); ?>
 						</div><!-- .comment-meta -->
 					</div>
-
 
 					<div class="comment-details">
 
@@ -1517,7 +1527,7 @@ function techly_comments_cbf( $comment, $args, $depth ) {
 						<?php
 						// Display comment moderation text
 						if ( $comment->comment_approved == '0' ) { ?>
-							<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'techly' ); ?></em>
+							<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'techly' ); ?></em>
 							<br/><?php
 						} ?>
 
@@ -1528,9 +1538,12 @@ function techly_comments_cbf( $comment, $args, $depth ) {
 							'add_below'  => $add_below,
 							'depth'      => $depth,
 							'max_depth'  => $args['max_depth'],
-							'reply_text' => $icon . __( '', 'techly' )
-//							'reply_text' => $icon . __( 'Reply', 'techly' )
+							// 'reply_text' => $icon . __( '', 'techly' )
+							'reply_text' => $icon . __( 'Reply', 'techly' )
 						] ) ); ?>
+
+
+
 
 					</div><!-- .comment-details -->
 				</div>
@@ -1567,7 +1580,7 @@ if ( ! function_exists( 'techly_hanburger' ) ) {
 					<!-- <span></span>
 					<span></span>
 					<span></span> -->
-					
+
 					<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="6" height="6" rx="2" fill="currentColor"/>
 						<rect y="11" width="6" height="6" rx="2" fill="currentColor"/>
