@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 /**
  * @author  RadiusTheme
  * @since   1.0
@@ -16,6 +19,7 @@ if( function_exists( 'bcn_display') ){
 	echo '</div></div>';
 } else {
 	echo '<div class="breadcrumb-area"><div class="entry-breadcrumb">';
-	echo techly_breadcrumb();
+	techly_breadcrumb();
 	echo '</div></div>';
 }
+
