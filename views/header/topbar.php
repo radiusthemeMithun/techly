@@ -39,7 +39,7 @@ $_fullwidth = Opt::$header_width == 'full' ? '-fluid' : '';
 				<span><i class="icon-rt-phone"></i><a href="tel:<?php echo esc_attr( techly_option( 'rt_phone' ) );?>"><?php techly_html( techly_option( 'rt_phone' ) , false );?></a></span>
 				<?php } ?>
 				<div class="social-icon">
-					<?php if( techly_option( 'rt_follow_us_label' ) ) { ?><label><?php echo techly_option( 'rt_follow_us_label' ) ?></label><?php } ?>
+					<?php if( techly_option( 'rt_follow_us_label' ) ) { ?><label><?php echo esc_html( techly_option( 'rt_follow_us_label' ) ); ?></label><?php } ?>
 					<?php techly_get_social_html( '#555' ); ?>
 				</div>
 			</div>

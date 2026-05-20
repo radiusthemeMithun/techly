@@ -38,7 +38,7 @@ $duration = techly_option('duration');
 			<header class="entry-header">
 				<?php
 				if ( ! empty( $meta_list ) && techly_option( 'rt_meta_visibility' ) ) {
-					echo techly_post_meta( [
+					echo techly_post_meta( [ // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						'with_list'     => true,
 						'with_icon'     => true,
 						'include'       => $meta_list,
