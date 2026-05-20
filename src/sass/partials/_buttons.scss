@@ -1,0 +1,238 @@
+button {
+	@include transition_default();
+	cursor: pointer;
+}
+
+.btn {
+	display: inline-grid;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	border-radius: 500px;
+	cursor: pointer;
+	color: $white_color;
+	//padding: 14px 30px;
+	padding: 5px 5px 5px 30px;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-shadow: none;
+	-webkit-appearance: none;
+	border: none;
+	background-color: $primary_color;
+	transition: all ease 0.3s;
+	position: relative;
+
+	&:hover {
+		background-color: $title_color;
+		color: $white_color;
+
+		.btn-content-wrap {
+			.rt-button-icon {
+				.btn-icon-wrapper {
+					.btn-icon {
+						transform: translate3d(17px, -17px, 0px) scale3d(0.2, 0.2, 1);
+					}
+
+					.btn-hover-icon {
+						transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+					}
+				}
+			}
+		}
+	}
+
+	&:active {
+		box-shadow: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&.btn-xl {
+		$xl_size: $base_fs + 8;
+		padding: ($base_fs+8) ($base_fs + 16);
+		@include font_size($xl_size, $xl_size);
+	}
+
+	&.btn-lg {
+		$lg_size: $base_fs + 2;
+		padding: ($base_fs + 2) ($base_fs + 8);
+		@include font_size($lg_size, $lg_size);
+	}
+
+	&.btn-sm {
+		$lg_size: $base_fs - 3;
+		padding: ($base_fs - 4) ($base_fs + 4);
+		@include font_size($lg_size, $lg_size);
+	}
+
+	&.btn-xs {
+		$lg_size: $base_fs - 6;
+		padding: ($base_fs - 5) ($base_fs + 2);
+		@include font_size($lg_size, $lg_size);
+	}
+
+}
+
+//Button style
+.btn-primary {
+	@include button_style($white_color, $primary_color, $secondary_color);
+}
+
+.btn-secondary {
+	@include button_style($white_color, $secondary_color, rgba($secondary_rgb, 0.8));
+}
+
+.btn-light {
+	@include button_style($white_color, $meta_color, $primary_color);
+}
+
+.btn-gray {
+	@include button_style($white_color, $meta_color, $primary_color);
+}
+
+.btn-content-wrap {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.rt-button-icon {
+	height: 50px;
+	width: 50px;
+	background-color: $white_color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+}
+
+.btn-icon-wrapper {
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn-icon {
+	display: flex;
+	color: $title_color;
+	transition: transform 0.35s linear;
+	font-size: 13px;
+	transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+	transform-style: preserve-3d;
+	i {
+		&::before {
+			font-weight: 600;
+		}
+	}
+}
+
+.btn-hover-icon {
+	display: flex;
+	color: $title_color;
+	transition: transform 0.35s linear;
+	font-size: 13px;
+	position: absolute;
+	transform: translate3d(-17px, 17px, 0px) scale3d(0.2, 0.2, 1);
+	i {
+		&::before {
+			font-weight: 600;
+		}
+	}
+}
+
+.button-2 {
+	padding: 5px 5px 5px 20px;
+	background-color: transparent;
+	border: 1px solid #E1E1E2;
+	color: $title_color;
+
+	&:hover {
+		background-color: $primary_color;
+		color: $white_color;
+		border-color: $primary_color;
+
+		.rt-button-icon {
+			background-color: $white_color;
+		}
+
+		.btn-icon {
+			color: $primary_color;
+		}
+
+		.btn-hover-icon {
+			color: $primary_color;
+		}
+	}
+
+	.rt-button-icon {
+		height: 35px;
+		width: 35px;
+		background-color: $primary_color;
+	}
+
+	.btn-icon {
+		color: $white_color;
+		i {
+			&::before {
+				font-weight: 500;
+			}
+		}
+	}
+
+	.btn-hover-icon {
+		color: $white_color;
+		i {
+			&::before {
+				font-weight: 500;
+			}
+		}
+	}
+}
+.button-3 {
+	padding: 5px 5px 5px 20px;
+	background-color: $primary_color;
+	color: $white_color;
+
+	&:hover {
+		background-color: $title_color;
+		color: $white_color;
+		.rt-button-icon {
+			background-color: $white_color;
+		}
+
+		.btn-icon {
+			color: $primary_color;
+		}
+
+		.btn-hover-icon {
+			color: $primary_color;
+		}
+	}
+
+	.rt-button-icon {
+		height: 35px;
+		width: 35px;
+		background-color: $white_color;
+	}
+
+	.btn-icon {
+		color: $primary_color;
+	}
+
+	.btn-hover-icon {
+		color: $primary_color;
+	}
+}
+.button-4 {
+	padding: 14px 30px;
+	font-weight: 500;
+}
+

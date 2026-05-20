@@ -1,0 +1,248 @@
+/* Elementor global CSS
+===============================*/
+.elementor-icon.elementor-social-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// Magnific popup
+.mfp-iframe-holder {
+	.mfp-iframe {
+		border-radius: 20px;
+	}
+
+	.mfp-close {
+		top: -44px;
+		right: 0;
+		text-align: center;
+		width: 44px;
+		opacity: 1;
+		padding-right: 0;
+		background-color: $tertiary_color;
+	}
+}
+
+.rt-service-section-1, .rt-blog-list-section {
+	@media(max-width: 1199px) {
+		overflow: hidden;
+	}
+}
+
+
+
+// Faq Style
+.faq-style-1 {
+	.e-n-accordion {
+		.e-n-accordion-item {
+			transition: all .3s ease;
+			.e-n-accordion-item-title {
+				justify-content: space-between;
+				border-radius: 5px;
+				transition: all .3s ease;
+			}
+
+			&.e-n-accordion-item[open] {
+				.e-n-accordion-item-title {
+					border-radius: 5px 5px 0 0;
+				}
+			}
+		}
+	}
+}
+
+.faq-style-2 {
+	.e-n-accordion {
+		.e-n-accordion-item {
+			transition: all .3s ease;
+			.e-n-accordion-item-title {
+				padding: 25px 30px;
+				transition: all .3s ease;
+				
+			}
+		}
+	}
+}
+
+
+.faq-style-3 {
+	.e-n-accordion {
+		.e-n-accordion-item {
+			transition: all .3s ease;
+			.e-n-accordion-item-title {
+				border: 0;
+				transition: all .3s ease;
+				border-top: 1px solid #e1e1e1;
+				position: relative;
+				.e-n-accordion-item-title-icon {
+					@media(min-width: 768px) {
+						height: 36px;
+						width: 36px;
+						border: 1px solid #484848;
+						border-radius: 100%;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+				&::before {
+					content: "";
+					height: 20px;
+					width: 20px;
+					border: 1px solid #484848;
+					border-radius: 100%;
+					position: absolute;
+					top: 32px;
+    				left: 50px;
+					@media(max-width: 1024px) {
+						display: none;
+					}
+				}
+			}
+			.elementor-element {
+				border: 0;
+			}
+				
+
+			&.e-n-accordion-item[open] {
+				.e-n-accordion-item-title {
+					// border: 0;
+					&::before {
+						border-color: $white_color;
+					}
+					.e-n-accordion-item-title-icon {
+						border-color: $white_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.rt-fun-fact-wrap {
+	backdrop-filter: blur(15px);
+	@media(max-width: 767px) {
+		position: unset !important;
+	}
+}
+
+
+
+.rt-faq-wrap-1 {
+	.elementor-widget-rt-image {
+		@media(max-width: 1440px) {
+			display: none;
+		}
+	}
+}
+
+
+
+.rt-icon-box {
+	.elementor-icon-box-wrapper {
+		.elementor-icon-box-icon {
+			.elementor-icon {
+				overflow: hidden;
+				transition: all .5s;
+			}
+		}
+
+		&:hover {
+			.elementor-icon-box-icon {
+				.elementor-icon {
+					background-color: $secondary_color;
+					fill: $white_color;
+					color: $white_color;
+
+					i {
+						animation: zoomIn .5s ease;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// hero overlay section
+@media(min-width: 1800px) {
+	body .hero-margin-pleft {
+		margin-left: 12%;
+	}
+	body .hero-margin-mleft {
+		margin-left: -12%;
+	}
+}
+
+@media(min-width: 1600px) {
+	body .hero9-margin-left {
+		margin-left: calc((100% - 1364px) / 2 + 12px);
+	}
+}
+
+// home 4 hero social fix
+body .home4-hero-social {
+	position: absolute;
+	left: -60px;
+	bottom: 400px;
+	z-index: 2;
+	@media(min-width: 1024px) and (max-width: 1439px) {
+		left: auto;
+		right: 0;
+	}
+
+	.rt-social-icon {
+		transform: rotate(-90deg);
+		left: 0;
+		position: relative;
+		gap: 10px;
+		@media(min-width: 1440px) and (max-width: 1660px) {
+			left: -90px;
+		}
+	}
+}
+
+// home 7 hero social fix
+body .home7-hero-social {
+	position: absolute;
+	left: 0;
+	bottom: 450px;
+	z-index: 2;
+	@media(min-width: 1024px) and (max-width: 1439px) {
+		left: auto;
+		right: 0;
+	}
+
+	.rt-social-icon {
+		transform: rotate(-90deg);
+		left: 0;
+		position: relative;
+		gap: 10px;
+		@media(min-width: 1440px) and (max-width: 1660px) {
+			left: -90px;
+		}
+	}
+}
+
+// header 10 layout fix
+.page-id-9694 {
+	.scrolling {
+		.header-top-space > .e-con-inner {
+			padding-top: 0 !important;
+		}
+	}
+}
+
+.page-id-8441 {
+	.scrolling {
+		.header-top-space > .e-con-inner {
+			padding-top: 0 !important;
+		}
+	}
+}
+
+.rt-margin-left {
+	@media(min-width: 1440px) {
+		margin-left: calc((100% - 1296px) / 2);
+	}
+}

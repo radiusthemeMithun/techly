@@ -1,0 +1,50 @@
+/*===============================
+RT Post Grid
+================================*/
+
+.rt-el-post-wrapper {
+	ul li:not(:last-child) {
+		&:after {
+			content: "•";
+			color: #B6B4B4;
+			margin-left: 15px;
+			font-size: 20px;
+			line-height: 1;
+			@media (min-width: 1025px) {
+				margin-left: 30px;
+			}
+		}
+	}
+}
+
+.blog-grid-5 {
+	.separate-meta {
+		position: absolute;
+		left: 24px;
+		top: 24px;
+
+		a {
+			background-color: $primary_color;
+			color: $white_color;
+
+			&:hover {
+				background-color: $title_color;
+				color: $white_color;
+			}
+		}
+	}
+
+	.rt-post-meta {
+		margin-bottom: 16px;
+	}
+
+	.entry-wrapper {
+		padding-top: 24px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.blog-list-2.rt-el-post-wrapper .post-thumbnail-wrap {
+		max-width: 322px;
+	}
+}

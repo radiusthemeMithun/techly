@@ -1,0 +1,263 @@
+/* Footer Widget wrapper
+***************************/
+//.site-footer {
+//	overflow: hidden;
+//	z-index: 2;
+//}
+.footer-widgets-wrapper {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	font-size: 15px;
+	background-color: #F3F7FF;
+	position: relative;
+
+
+	//Default widgets overwrite
+	.footer-widgets {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+
+		.widget-title, .widgettitle {
+			font-size: 20px;
+			margin-bottom: 10px;
+			line-height: 35px;
+			color: $title_color;
+			text-transform: capitalize;
+		}
+
+		> .widget {
+			flex-grow: 25;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			ul {
+				padding-left: 20px;
+			}
+		}
+	}
+}
+
+.site-footer {
+	//p {
+	//	color: #484848;
+	//}
+
+	.footer-shortcode {
+		margin-top: 24px;
+
+		.fluentform {
+			.ff-t-container {
+				position: relative;
+				@media(min-width: 768px) {
+					gap: 0;
+					align-items: start;
+				}
+			}
+
+			.frm-fluent-form {
+				@media(min-width: 768px) {
+					background-color: $white_color;
+					padding: 6px;
+					border-radius: 60px;
+				}
+
+				.ff-el-form-control {
+					border: 0;
+
+					&:focus {
+						outline: 0;
+						box-shadow: none;
+					}
+
+					&::placeholder {
+						color: #648A73;
+					}
+				}
+
+				.ff-btn-submit {
+					border: 0;
+					background-color: $secondary_color;
+					text-transform: uppercase;
+					color: $white_color;
+					transition: all .3s ease-in-out;
+					margin-top: 10px;
+					@media(min-width: 768px) {
+						border-radius: 60px;
+						margin-top: 0;
+					}
+
+					&:hover {
+						opacity: 1;
+						background-color: $primary_color;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-widget-logo {
+		img {
+			margin-bottom: 15px;
+		}
+	}
+
+	.footer-social:not(:has(*)) {
+		background: red;
+		padding: 15px;
+	}
+
+	.footer-social {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		flex-wrap: wrap;
+		margin-top: 24px;
+
+		a {
+			color: $white_color;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.4s ease-in-out;
+			overflow: hidden;
+
+			svg {
+				fill: $white_color;
+			}
+
+			&:hover {
+				color: $secondary_color;
+
+				svg {
+					//animation: toBottomFromTop 0.7s forwards;
+					fill: $secondary_color;
+				}
+			}
+		}
+
+		svg {
+			width: 14px;
+			height: 14px;
+		}
+	}
+
+	.fluentform {
+		.ff-t-container {
+			position: relative;
+			@media(min-width: 768px) {
+				gap: 0;
+				align-items: start;
+			}
+		}
+
+		.ff-el-group {
+			margin-bottom: 0;
+		}
+
+		.ff-btn-submit {
+			margin-bottom: 0 !important;
+			overflow: hidden;
+			i {
+				display: block;
+				transition: all 0.4s ease-in-out;
+			}
+
+			&:hover {
+				i {
+					animation: fadeInBottomLeft 0.5s forwards;
+				}
+			}
+		}
+
+		.ff-t-cell {
+			&:first-of-type {
+				flex-basis: 100% !important;
+			}
+		}
+	}
+
+	.tagcloud {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+
+		a {
+			color: $primary_color;
+			background-color: $white_color;
+			display: inline-block;
+			font-weight: 500;
+			line-height: 1;
+			font-size: 12px !important;
+			border-radius: 20px;
+			margin: 0px;
+			padding: 10px 15px;
+
+			&:hover {
+				background-color: $primary_color;
+				color: $white_color;
+			}
+		}
+	}
+
+	.widget_nav_menu,
+	.widget_archive,
+	.widget_categories,
+	.widget_pages,
+	.widget_meta {
+		ul {
+			li {
+				a {
+					position: relative;
+					line-height: 35px;
+					transition: all 0.4s;
+					&::before {
+						content: "";
+						height: 1px;
+						width: 0;
+						background-color: $primary_color;
+						position: absolute;
+						left: 100%;
+						bottom: 10px;
+						visibility: hidden;
+						opacity: 0;
+						transition: 0.3s cubic-bezier(0.47, 0.05, 0.5, 0.94);
+					}
+					&:hover {
+						&::before {
+							width: 100%;
+							left: 0;
+							transition: width 0.4s ease;
+							visibility: visible;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.widget_techly_contact {
+		.techly-contact-widget-wrapper {
+			.footer-place {
+				font-size: 14px;
+				color: $title_color;
+				margin-bottom: -5px;
+			}
+			.phone-no {
+				p {
+					a {
+						color: $title_color;
+						&:hover {
+							color: $primary_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

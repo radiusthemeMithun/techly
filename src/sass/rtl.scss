@@ -1,0 +1,43 @@
+
+.rt-button .btn i:before,
+.pagination-list li i,
+.swiper-navigation .swiper-button i:before,
+.frm-fluent-form .ff-btn-submit i:before,
+.rt-service-sidebar ul.menu li a:after,
+.rt-service-sidebar .techly-navbar li a:after,
+.service-sidebar-menu ul.menu li a:after,
+.service-sidebar-menu .techly-navbar li a:after,
+.service-single .service-single-item ul li:before {
+	transform: rotate(180deg);
+}
+
+.rt-button .btn {
+	-moz-column-gap: 15px;
+	column-gap: 15px;
+}
+
+
+.blog-grid-2 .post-thumbnail-wrap .posted-on {
+	right: 5px;
+	bottom: 5px;
+}
+
+.wp-block-quote {
+	border-left-width: 0;
+}
+.rt-info-layout-3 .info-box {
+	clip-path: polygon(
+  26.479% 0%,26.479% 0%,25.687% 0.103%,24.953% 0.394%,24.281% 0.846%,23.68% 1.43%,23.154% 2.12%,22.71% 2.888%,22.354% 3.707%,22.092% 4.549%,21.93% 5.387%,21.875% 6.193%,21.875% 8.486%,21.875% 8.486%,21.708% 10.458%,21.225% 12.328%,20.453% 14.073%,19.417% 15.665%,18.143% 17.082%,16.659% 18.297%,14.99% 19.285%,13.162% 20.022%,11.201% 20.483%,9.135% 20.642%,4.808% 20.642%,4.808% 20.642%,4.028% 20.702%,3.288% 20.876%,2.598% 21.154%,1.968% 21.527%,1.408% 21.986%,0.928% 22.52%,0.537% 23.121%,0.245% 23.779%,0.063% 24.485%,0% 25.229%,0% 95.413%,0% 95.413%,0.063% 96.157%,0.245% 96.863%,0.537% 97.521%,0.928% 98.122%,1.408% 98.656%,1.968% 99.115%,2.598% 99.488%,3.288% 99.766%,4.028% 99.94%,4.808% 100%,95.192% 100%,95.192% 100%,95.972% 99.94%,96.712% 99.766%,97.402% 99.488%,98.032% 99.115%,98.592% 98.656%,99.072% 98.122%,99.463% 97.521%,99.755% 96.863%,99.937% 96.157%,100% 95.413%,100% 4.587%,100% 4.587%,99.937% 3.843%,99.755% 3.137%,99.463% 2.479%,98.928% 1.878%,98.592% 1.344%,98.032% 0.885%,97.402% 0.512%,96.712% 0.234%,95.972% 0.06%,95.192% 0%,26.479% 0%
+);
+}
+.rt-info-layout-3 .info-arrow-icon {
+	transform: rotate(-90deg);
+}
+.rt-image-zoom {
+	transform: rotate(-90deg);
+}
+.rt-data-service .service-bg-image {
+	left: 0;
+	right: auto;
+}
+

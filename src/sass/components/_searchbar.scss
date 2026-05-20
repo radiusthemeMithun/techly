@@ -1,0 +1,60 @@
+
+.techly-search-form .search-box {
+	position: relative;
+	border: 0;
+	border-radius: 6px;
+	overflow: hidden;
+
+	input {
+		font-size: 15px;
+		font-weight: 400;
+		height: 50px;
+		padding: 0 55px 0 20px;
+		border: none;
+		width: 100%;
+		border-radius: 5px;
+		background-color: #F9F9F9;
+		color: $title_color;
+
+		&::placeholder {
+			color: #B6B8BC;
+		}
+	}
+
+	button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 50px;
+		width: 50px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		color: $white_color;
+		background: $primary_color;
+		border-radius: 0 5px 5px 0;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			background-color: $title_color;
+
+			svg {
+				fill: $white_color;
+			}
+		}
+
+
+		svg {
+			fill: $white_color;
+			width: 18px;
+			height: 18px;
+			margin: 1.5px;
+			transition: all .3s ease-in-out;
+		}
+
+		.btn-label {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,147 @@
+/*-------------------------------------
+#. EL: Swiper Slider
+---------------------------------------*/
+.rt-swiper-slider {
+	overflow: hidden;
+	//position: relative;
+	.swiper-wrapper {
+		align-items: center;
+	}
+}
+
+.swiper-navigation {
+	.swiper-button-prev {
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.swiper-button-next {
+		left: 140px;
+		right: 0;
+		margin: auto;
+	}
+
+	.swiper-button {
+		position: absolute;
+		top: auto;
+		width: 60px;
+		height: 40px;
+		z-index: 2;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 30px;
+		background-color: $meta_light;
+		@include transition_default();
+		color: $title_color;
+		margin-top: 90px;
+		@media(max-width: 1024px) {
+			margin-top: 40px;
+		}
+		&:hover {
+			background-color: $primary_color;
+			color: $white_color;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.swiper-pagination {
+	position: relative;
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	bottom: 0 !important;
+	z-index: 1;
+
+	.swiper-pagination-bullet {
+		width: 12px;
+		height: 12px;
+		border-radius: 100%;
+		transition: all 0.21s ease-in-out;
+		background: rgba(255, 255, 255, .2);
+		opacity: 1;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: $white_color;
+		width: 40px;
+		border-radius: 500px;
+	}
+}
+
+@media(max-width: 767px) {
+	.swiper-navigation {
+		display: none;
+	}
+}
+
+.swiper-scrollbar {
+	position: relative !important;
+	border: 1px solid $meta_color;
+	background-color: $white_color;
+	height: 17px !important;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	width: 100% !important;
+	left: 0 !important;
+
+	.swiper-scrollbar-drag {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+		border-radius: 100px;
+		border: 2px solid $black_color;
+		background-color: $primary_color;
+		box-shadow: 4px 7px 0 0 rgba(0, 0, 0, 0.2);
+		color: $white_color;
+		width: 156px !important;
+		height: 40px;
+		padding: 10px 0;
+		top: -15px;
+		line-height: 18px;
+		text-align: center;
+		cursor: pointer;
+		z-index: 1;
+
+		i {
+			font-size: 12px;
+		}
+	}
+}
+
+.swiper {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	z-index: 1;
+}
+
+.swiper-3d,
+.swiper-3d.swiper-css-mode .swiper-wrapper {
+	perspective: 1200px;
+}
+
+.swiper-pointer-events {
+	touch-action: pan-y;
+}
+
+.swiper-3d .swiper-cube-shadow,
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-wrapper {
+	transform-style: preserve-3d;
+}

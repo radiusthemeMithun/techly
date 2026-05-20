@@ -1,0 +1,147 @@
+.rt-blur-shape ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.rt-blur-shape ul li {
+	position: absolute;
+	z-index: -1;
+}
+
+.rt-blur-shape-layout-1 li {
+	height: 299px;
+	width: 299px;
+	border-radius: 100%;
+	background-color: #EDFBF3;
+	filter: blur(250px);
+	top: 0;
+	left: 0;
+}
+
+.rt-blur-shape-layout-2 li {
+	width: 299px;
+	height: 299px;
+	border-radius: 100%;
+	background: #0F4CF3;
+	filter: blur(250px);
+}
+.rt-blur-shape-layout-2 li:nth-child(1) {
+	top: 0;
+	left: 0;
+}
+.rt-blur-shape-layout-2 li:nth-child(2) {
+	top: 500px;
+	right: 0;
+}
+
+
+
+.rt-blur-shape-layout-3 li {
+	height: 529px;
+	width: 529px;
+	border-radius: 529px;
+	filter: blur(100px);
+}
+.rt-blur-shape-layout-3 li:nth-child(1) {
+	background-color: #E5E6FF;
+	top: -200px;
+	left: 0;
+}
+.rt-blur-shape-layout-3 li:nth-child(2) {
+	background-color: #FAECE8;
+	top: -300px;
+	right: 0;
+}
+.rt-blur-shape-layout-3 li:nth-child(3) {
+	background-color: #EBF8FF;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+//...........Integration Shape.........//
+
+.rt-integration-shape {
+	position: relative;
+	.fixed-shape {
+		text-align: center;
+		padding-top: 300px;
+		position: relative;
+		z-index: 2;
+		@media(max-width: 575px) {
+			padding-top: 0;
+		}
+		.rt-icon {
+			height: 180px;
+			width: 180px;
+			background-color: $primary_color;
+			border-radius: 100%;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.shape-item {
+		position: absolute;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		bottom: -80px;
+		z-index: 1;
+		transition: .4s;
+		@media(max-width: 575px) {
+			position: unset;
+			transform: translate(0);
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+		}
+		.icon {
+			height: 170px;
+			width: 170px;
+			background-color: #0F0F10;
+			border-radius: 100%;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+	}
+	.shape-item.active {
+		position: absolute;
+		transform: translate(0);
+		@media(max-width: 575px) {
+			position: unset;
+			transform: translate(0);
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+		}
+		&:nth-child(1) {
+			bottom: 24%;
+			left: 0;
+
+		}
+		&:nth-child(2) {
+			left: 18%;
+			bottom: 50%;
+
+		}
+		&:nth-child(3) {
+			left: 40%;
+			bottom: 50%;
+
+		}
+		&:nth-child(4) {
+			left: 62%;
+			bottom: 50%;
+
+		}
+		&:nth-child(5) {
+			left: 82%;
+			bottom: 24%;
+		}
+	}
+}
+
+
