@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -303,53 +303,53 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				/* translators: %s: plugin name. */
 				'updating'                        => esc_html__( 'Updating Plugin: %s', 'techly' ),
 				'oops'                            => esc_html__( 'Something went wrong with the plugin API.', 'techly' ),
-				'notice_can_install_required'     => _n_noop( // phpcs:ignore 
+				'notice_can_install_required'     => _n_noop( // phpcs:ignore
 					/* translators: 1: plugin name(s). */
 					'This theme requires the following plugin: %1$s.',
 					'This theme requires the following plugins: %1$s.',
 					'techly'
 				),
-				'notice_can_install_recommended'  => _n_noop(// phpcs:ignore 
+				'notice_can_install_recommended'  => _n_noop(// phpcs:ignore
 					/* translators: 1: plugin name(s). */
 					'This theme recommends the following plugin: %1$s.',
 					'This theme recommends the following plugins: %1$s.',
 					'techly'
 				),
-				'notice_ask_to_update'            => _n_noop(// phpcs:ignore 
+				'notice_ask_to_update'            => _n_noop(// phpcs:ignore
 					/* translators: 1: plugin name(s). */
 					'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
 					'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
 					'techly'
 				),
-				'notice_ask_to_update_maybe'      => _n_noop(// phpcs:ignore 
+				'notice_ask_to_update_maybe'      => _n_noop(// phpcs:ignore
 					/* translators: 1: plugin name(s). */
 					'There is an update available for: %1$s.',
 					'There are updates available for the following plugins: %1$s.',
 					'techly'
 				),
-				'notice_can_activate_required'    => _n_noop(// phpcs:ignore 
+				'notice_can_activate_required'    => _n_noop(// phpcs:ignore
 					/* translators: 1: plugin name(s). */
 					'The following required plugin is currently inactive: %1$s.',
 					'The following required plugins are currently inactive: %1$s.',
 					'techly'
 				),
-				'notice_can_activate_recommended' => _n_noop(// phpcs:ignore 
+				'notice_can_activate_recommended' => _n_noop(// phpcs:ignore
 					/* translators: 1: plugin name(s). */
 					'The following recommended plugin is currently inactive: %1$s.',
 					'The following recommended plugins are currently inactive: %1$s.',
 					'techly'
 				),
-				'install_link'                    => _n_noop(// phpcs:ignore 
+				'install_link'                    => _n_noop(// phpcs:ignore
 					'Begin installing plugin',
 					'Begin installing plugins',
 					'techly'
 				),
-				'update_link'                     => _n_noop(// phpcs:ignore 
+				'update_link'                     => _n_noop(// phpcs:ignore
 					'Begin updating plugin',
 					'Begin updating plugins',
 					'techly'
 				),
-				'activate_link'                   => _n_noop(// phpcs:ignore 
+				'activate_link'                   => _n_noop(// phpcs:ignore
 					'Begin activating plugin',
 					'Begin activating plugins',
 					'techly'
