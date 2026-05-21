@@ -40,7 +40,7 @@ class Banner extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_top_bar_controls', [
+		return apply_filters( 'rt_top_bar_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_banner' => [
 				'type'    => 'switch',

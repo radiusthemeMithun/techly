@@ -37,7 +37,7 @@ class General extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_general_controls', [
+		return apply_filters( 'rt_general_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_svg_enable' => [
 				'type'  => 'switch',

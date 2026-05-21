@@ -39,7 +39,7 @@ class Footer extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_footer_controls', [
+		return apply_filters( 'rt_footer_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_footer_display' => [
 				'type'        => 'switch',

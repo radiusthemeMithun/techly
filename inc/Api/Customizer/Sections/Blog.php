@@ -40,7 +40,7 @@ class Blog extends Customizer {
 	 * @return array
 	 */
 	public function get_controls() {
-		return apply_filters( 'rt_blog_controls', [
+		return apply_filters( 'rt_blog_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_blog_style' => [
 				'type'        => 'select',

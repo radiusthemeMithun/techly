@@ -38,7 +38,7 @@ class Contact extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_contact_controls', [
+		return apply_filters( 'rt_contact_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_phone' => [
 				'type'  => 'text',

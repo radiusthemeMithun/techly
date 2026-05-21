@@ -31,7 +31,6 @@ class WooArchiveSettings extends Customizer {
 	 */
 	public function get_controls() {
 		return apply_filters( 'techly_service_controls', [
-
 			'rt_woo_archive_heading' => [
 				'type'  => 'heading',
 				'label' => __( 'Woocommerce Archive Option', 'techly' ),

@@ -40,7 +40,7 @@ class TypographyBody extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_body_typo_section', [
+		return apply_filters( 'rt_body_typo_section', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_body_typo' => [
 				'type'    => 'typography',

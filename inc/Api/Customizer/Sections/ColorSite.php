@@ -38,7 +38,7 @@ class ColorSite extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_site_color_controls', [
+		return apply_filters( 'rt_site_color_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_site_color1'   => [
 				'type'  => 'heading',

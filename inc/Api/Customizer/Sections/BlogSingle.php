@@ -38,7 +38,7 @@ class BlogSingle extends Customizer {
 	 * @return array
 	 */
 	public function get_controls() {
-		return apply_filters( 'rt_single_controls', [
+		return apply_filters( 'rt_single_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_single_post_style' => [
 				'type'    => 'select',

@@ -40,7 +40,7 @@ class Team extends Customizer {
 	 * @return array
 	 */
 	public function get_controls() {
-		return apply_filters( 'rt_team_controls', [
+		return apply_filters( 'rt_team_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_team_archive_heading' => [
 				'type'  => 'heading',

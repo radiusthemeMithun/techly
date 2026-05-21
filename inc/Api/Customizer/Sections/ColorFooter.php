@@ -39,7 +39,7 @@ class ColorFooter extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_footer_color_controls', [
+		return apply_filters( 'rt_footer_color_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 			'rt_footer_color1'           => [
 				'type'  => 'heading',
 				'label' => __( 'Main Footer', 'techly' ),

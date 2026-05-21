@@ -37,7 +37,7 @@ class Error extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_labels_controls', [
+		return apply_filters( 'rt_labels_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_error_image' => [
 				'type'         => 'image',

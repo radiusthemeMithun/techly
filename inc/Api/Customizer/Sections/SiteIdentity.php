@@ -30,7 +30,7 @@ class SiteIdentity extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_title_tagline_controls', [
+		return apply_filters( 'rt_title_tagline_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_logo' => [
 				'type'         => 'image',

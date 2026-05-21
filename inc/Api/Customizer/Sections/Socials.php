@@ -55,6 +55,6 @@ class Socials extends Customizer {
 			$count ++;
 		}
 
-		return apply_filters( 'rt_socials_controls', $social_icon_list );
+		return apply_filters( 'rt_socials_controls', $social_icon_list ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 	}
 }

@@ -39,7 +39,7 @@ class ColorTopbar extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_header_color_controls', [
+		return apply_filters( 'rt_header_color_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 
 			'rt_topbar_color' => [

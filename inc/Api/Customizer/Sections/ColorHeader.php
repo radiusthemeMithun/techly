@@ -40,7 +40,7 @@ class ColorHeader extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_header_color_controls', [
+		return apply_filters( 'rt_header_color_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_menu_heading1' => [
 				'type'  => 'heading',

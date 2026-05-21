@@ -40,7 +40,7 @@ class TypographyHeading extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_heading_typo_section', [
+		return apply_filters( 'rt_heading_typo_section', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_all_heading_typo' => [
 				'type'    => 'typography',

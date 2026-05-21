@@ -40,7 +40,7 @@ class TypographyMenu extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_menu_typo_section', [
+		return apply_filters( 'rt_menu_typo_section', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_menu_typo' => [
 				'type'    => 'typography',

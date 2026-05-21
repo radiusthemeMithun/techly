@@ -39,7 +39,7 @@ class Project extends Customizer {
 	 * @return array
 	 */
 	public function get_controls() {
-		return apply_filters( 'rt_project_controls', [
+		return apply_filters( 'rt_project_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_project_archive_heading' => [
 				'type'  => 'heading',

@@ -40,7 +40,7 @@ class Service extends Customizer {
 	 * @return array
 	 */
 	public function get_controls() {
-		return apply_filters( 'rt_service_controls', [
+		return apply_filters( 'rt_service_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_service_archive_heading' => [
 				'type'  => 'heading',

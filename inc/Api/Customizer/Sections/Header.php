@@ -40,7 +40,7 @@ class Header extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_header_controls', [
+		return apply_filters( 'rt_header_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_header_style' => [
 				'type'      => 'image_select',

@@ -40,7 +40,7 @@ class ColorBanner extends Customizer {
 	 */
 	public function get_controls() {
 
-		return apply_filters( 'rt_site_color_controls', [
+		return apply_filters( 'rt_site_color_controls', [ // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 
 			'rt_breadcrumb_title_color' => [
 				'type'    => 'color',
