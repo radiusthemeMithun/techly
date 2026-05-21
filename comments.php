@@ -1,5 +1,5 @@
 <?php
-// phpcs:ignoreFile
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
