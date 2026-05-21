@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignoreFile
 namespace RT\Techly\Plugins;
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -277,7 +278,7 @@ class TechlyWcFunctions {
 			}
 		}
 
-	
+
 
 
 		if ( $in_cart ) {

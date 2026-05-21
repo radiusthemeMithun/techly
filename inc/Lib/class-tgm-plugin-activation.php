@@ -1,5 +1,5 @@
 <?php
-// phpcs:disable
+// phpcs:ignoreFile
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
