@@ -46,13 +46,18 @@ class Opt {
 	public function set_options() {
 		$newData  = [];
 		$defaults = Customizer::$default_value;
+		$reset    = isset( $_GET['reset_theme_mod'] ) && $_GET['reset_theme_mod'] == 1;
 		foreach ( $defaults as $key => $dValue ) {
-			if ( isset( $_GET['reset_theme_mod'] ) && $_GET['reset_theme_mod'] == 1 ) {
+			if ( $reset ) {
 				remove_theme_mod( $key );
-				wp_redirect( 'customize.php' );
+				continue;
 			}
 			$value           = $_GET[ $key ] ?? get_theme_mod( $key, $dValue );
 			$newData[ $key ] = $value;
+		}
+		if ( $reset ) {
+			wp_safe_redirect( 'customize.php' );
+			exit;
 		}
 		self::$options = $newData;
 	}
