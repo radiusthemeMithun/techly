@@ -252,8 +252,9 @@ class Fns {
 	 * @return mixed|string
 	 */
 	public static function blog_column() {
-		if ( ! empty( $_REQUEST['column'] ) ) {
-			return sanitize_text_field( $_REQUEST['column'] );
+		// Display-layout hint read from the URL; no state change, so nonce verification is not applicable.
+		if ( ! empty( $_REQUEST['column'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			return sanitize_text_field( wp_unslash( $_REQUEST['column'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		}
 		$blog_colum_opt = techly_option( 'rt_blog_column' ) !== 'default' ? techly_option( 'rt_blog_column' ) : '';
 		$blog_sidebar   = Opt::$sidebar === 'default' ? 'rt-sidebar' : Opt::$sidebar;
