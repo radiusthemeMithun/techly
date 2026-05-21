@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -28,7 +29,7 @@ if( techly_option( 'rt_project_filter' ) == 'grayscale' ) {
 		</div>
 		<div class="project-content">
 			<div class="project-info">
-				
+
 				<h3 class="project-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
 				<?php if ( techly_option( 'rt_project_ar_cat' ) ) { ?>
 				<span class="project-cat"><?php

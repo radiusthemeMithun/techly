@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -66,12 +67,12 @@ if ( techly_option( 'rt_team_single_author_order' ) == 'thumb-right') {
 										<?php echo esc_html( $rt_team_address ); ?>
 									</li>
 								<?php }
-								
+
 								if ( ! empty( $rt_team_website ) ) { ?>
 									<li><span class="team-label"><?php esc_html_e( 'Website', 'techly' ); ?> : </span>
 										<?php echo esc_html( $rt_team_website ); ?>
 									</li>
-								<?php } 
+								<?php }
 								if ( ! empty( $rt_team_age ) ) { ?>
 									<li><span class="team-label"><?php esc_html_e( 'Age', 'techly' ); ?> : </span>
 										<?php echo esc_html( $rt_team_age ); ?>
@@ -82,7 +83,7 @@ if ( techly_option( 'rt_team_single_author_order' ) == 'thumb-right') {
 									<?php echo esc_html( $rt_team_qualification ); ?>
 								</li>
 								<?php }
-								
+
 								if ( ! empty( $rt_team_phone ) ) { ?>
 									<li><span class="team-label"><?php esc_html_e( 'Phone', 'techly' ); ?> : </span>
 										<a href="tel:<?php echo esc_html( $rt_team_phone ); ?>"><?php echo esc_html( $rt_team_phone ); ?></a>

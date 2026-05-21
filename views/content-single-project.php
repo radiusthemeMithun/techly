@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -33,7 +34,7 @@ $rt_project_rating = 5- intval( $ratting );
 		<div class="project-content-info">
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<div class="project-information">
-				
+
 				<ul class="info-list">
 					<?php if ( techly_option( 'rt_project_cat' ) ) { ?>
 						<li><label><?php esc_html_e( 'Category', 'techly' );?>: </label>
@@ -96,7 +97,7 @@ $rt_project_rating = 5- intval( $ratting );
 				</div>
 			</div>
 
-			<?php if ( techly_option('rt_project_pagination') == '1' ) { 
+			<?php if ( techly_option('rt_project_pagination') == '1' ) {
 				$prev_text = techly_option('project_prev_text', 'Previous Project');
 				$next_text = techly_option('project_next_text', 'Next Project');
 			?>
