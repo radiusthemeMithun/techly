@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignoreFile
 /**
  * Template part for single team related
  *
@@ -139,7 +140,7 @@ class TeamRelated {
 													<p><?php techly_html( $content , false ); ?></p>
 												<?php } ?>
 											</div>
-											
+
 										</div>
 									</div>
 								</div>

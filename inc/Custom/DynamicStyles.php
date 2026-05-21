@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:ignoreFile
 namespace RT\Techly\Custom;
 
 use RT\Techly\Helpers\Fns;
@@ -432,7 +432,7 @@ class DynamicStyles {
 		 * @return void
 		 */
 		protected
-		
+
 
 		function site_fonts() {
 

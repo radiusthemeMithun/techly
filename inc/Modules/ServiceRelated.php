@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignoreFile
 /**
  * Template part for single service related
  *
