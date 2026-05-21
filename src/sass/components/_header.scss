@@ -25,7 +25,7 @@ $dropdown_top_bottom_margin: 10px;
 }
 
 .main-header-section {
-	border-bottom: 1px solid rgba($black_color, 0.1);
+	border-bottom: 0;
 }
 
 .site-branding {
@@ -258,7 +258,7 @@ $dropdown_top_bottom_margin: 10px;
 .techly-header-2 {
 	.site-header {
 		.header-container {
-			
+
 			@media(min-width: 1200px) {
 				max-width: 1320px;
 				margin: 0 auto;
