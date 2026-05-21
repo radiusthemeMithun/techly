@@ -158,13 +158,13 @@ class Extras {
 							$class    = "mega-menu mega-menu-col-{$menu_item}" . $class_hide ?? '';
 							$selected = ( $_mega_menu == $class ) ? ' selected="selected" ' : null;
 							?>
-							
+
 
 							<option <?php echo esc_attr( $selected ); ?> value="<?php echo esc_attr( $class ); ?>">
-								<?php printf( /* translators: %1$s: Menu Item. %2$s:Label Hide  */ 
-								esc_html__( 'Mega menu - %1$s Col %2$s', 'techly' ), 
-								esc_html( $menu_item ), 
-								esc_html( $label_hide ) 
+								<?php printf( /* translators: %1$s: Menu Item. %2$s:Label Hide  */
+									esc_html__( 'Mega menu - %1$s Col %2$s', 'techly' ),
+									esc_html( $menu_item ),
+									esc_html( $label_hide )
 								); ?>
 							</option>
 							<?php
@@ -179,10 +179,10 @@ class Extras {
 			<label class="widefat" for="techly-menu-qs-<?php echo esc_attr($item_id); ?>">
 				<?php echo esc_html__( 'Query String', 'techly' ); ?><br>
 				<input type="text"
-					   class="widefat"
-					   id="techly-menu-qs-<?php echo esc_attr($item_id); ?>"
-					   name="techly-menu-qs[<?php echo esc_attr($item_id); ?>]"
-					   value="<?php echo esc_html( $menu_query_string ); ?>"
+				       class="widefat"
+				       id="techly-menu-qs-<?php echo esc_attr($item_id); ?>"
+				       name="techly-menu-qs[<?php echo esc_attr($item_id); ?>]"
+				       value="<?php echo esc_html( $menu_query_string ); ?>"
 				/>
 			</label>
 		</p>
@@ -200,8 +200,12 @@ class Extras {
 	 * @return void
 	 */
 	function menu_update( $menu_id, $menu_item_db_id ) {
-		$_mega_menu         = $_POST['techly_mega_menu'][ $menu_item_db_id ] ?? '';
-		$query_string_value = $_POST['techly-menu-qs'][ $menu_item_db_id ] ?? '';
+		if ( ! isset( $_POST['update-nav-menu-nonce'] ) || ! wp_verify_nonce( sanitize_key( $_POST['update-nav-menu-nonce'] ), 'update-nav_menu' ) ) {
+			return;
+		}
+
+		$_mega_menu         = isset( $_POST['techly_mega_menu'][ $menu_item_db_id ] ) ? sanitize_text_field( wp_unslash( $_POST['techly_mega_menu'][ $menu_item_db_id ] ) ) : '';
+		$query_string_value = isset( $_POST['techly-menu-qs'][ $menu_item_db_id ] ) ? sanitize_text_field( wp_unslash( $_POST['techly-menu-qs'][ $menu_item_db_id ] ) ) : '';
 
 		update_post_meta( $menu_item_db_id, 'techly_mega_menu', $_mega_menu );
 		update_post_meta( $menu_item_db_id, 'techly_menu_qs', $query_string_value );
@@ -258,7 +262,7 @@ class Extras {
 		flush_rewrite_rules();
 	}
 
-	 public function insert_social_in_head() {
+	public function insert_social_in_head() {
 		global $post;
 
 		if ( ! isset( $post ) ) {
