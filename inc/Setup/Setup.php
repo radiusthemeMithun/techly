@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace RT\Techly\Setup;
 
 use RT\Techly\Traits\SingletonTraits;
@@ -54,7 +54,7 @@ class Setup {
 	// 		add_image_size( $size, $value[0], $value[1], $value[2] );
 	// 	}
 	// }
-	
+
 	/**
 	 * Add Theme Support
 	 * @return void

@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -1442,7 +1443,7 @@ if ( ! function_exists( 'techly_breadcrumb' ) ) {
 						echo '<span class="title">';
 						esc_html_e( 'Blog', 'techly' );
 						echo '</span>';
-					} 
+					}
 					?>
 				</li>
 			</ul>
@@ -1499,11 +1500,11 @@ function techly_comments_cbf( $comment, $args, $depth ) {
 				</div>
 				<div class="author-info">
 					<div class="author-meta">
-						<?php 
+						<?php
 						printf(
 								'<cite class="fn">%s</cite>',
 								wp_kses_post( get_comment_author_link() )
-							); 
+							);
 						?>
 
 
@@ -1580,7 +1581,7 @@ if ( ! function_exists( 'techly_hanburger' ) ) {
 					<!-- <span></span>
 					<span></span>
 					<span></span> -->
-					
+
 					<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="6" height="6" rx="2" fill="currentColor"/>
 						<rect y="11" width="6" height="6" rx="2" fill="currentColor"/>

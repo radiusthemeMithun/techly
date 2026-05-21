@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace RT\Techly\Options;
 
 use RT\Techly\Traits\SingletonTraits;

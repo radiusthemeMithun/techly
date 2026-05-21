@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace RT\Techly\Helpers;
 
 use RT\Techly\Core\Sidebar;

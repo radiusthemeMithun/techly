@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace RT\Techly\Core;
 
 use Walker_Nav_Menu;

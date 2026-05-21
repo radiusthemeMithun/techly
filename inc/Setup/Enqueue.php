@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace RT\Techly\Setup;
 
 use RT\Techly\Helpers\Constants;
@@ -47,8 +47,8 @@ class Enqueue {
 		wp_register_script( 'rt-smoothscroll', techly_get_js( 'SmoothScroll' ), [ 'jquery' ], Constants::get_version(), true );
 		wp_register_script( 'rt-scrolltrigger', techly_get_js( 'ScrollTrigger.min' ), [ 'jquery' ], Constants::get_version(), true );
 		wp_register_script( 'rt-splittext', techly_get_js( 'SplitText' ), [ 'jquery' ], Constants::get_version(), true );
-		
-		
+
+
 	}
 
 	/**

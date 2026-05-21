@@ -7,7 +7,7 @@
  *
  * @package techly
  */
-
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace RT\Techly;
 
 use RT\Techly\Traits\SingletonTraits;

@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound
 namespace RT\Techly\Core;
 
 use RT\Techly\Traits\SingletonTraits;
@@ -34,7 +34,7 @@ class Tags {
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
-		
+
 		$posted_on   = sprintf( /* translators: %s: Posted on */
 			esc_html_x( 'Posted on %s', 'post date', 'techly' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
