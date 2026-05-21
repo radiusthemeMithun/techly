@@ -12,7 +12,7 @@ button {
 	cursor: pointer;
 	color: $white_color;
 	//padding: 14px 30px;
-	padding: 5px 5px 5px 30px;
+	padding: 5px 5px 5px 24px;
 	text-transform: capitalize;
 	text-decoration: none;
 	text-shadow: none;
@@ -101,8 +101,8 @@ button {
 }
 
 .rt-button-icon {
-	height: 50px;
-	width: 50px;
+	height: 42px;
+	width: 42px;
 	background-color: $white_color;
 	display: flex;
 	align-items: center;
@@ -113,8 +113,8 @@ button {
 .btn-icon-wrapper {
 	align-items: center;
 	justify-content: center;
-	width: 18px;
-	height: 18px;
+	width: 17px;
+	height: 17px;
 	display: flex;
 	position: relative;
 	overflow: hidden;
@@ -232,7 +232,7 @@ button {
 	}
 }
 .button-4 {
-	padding: 14px 30px;
+	padding: 13px 24px;
 	font-weight: 500;
 }
 

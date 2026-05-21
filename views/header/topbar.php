@@ -34,15 +34,17 @@ $_fullwidth = Opt::$header_width == 'full' ? '-fluid' : '';
 				<?php } ?>
 			</div>
 			<?php } ?>
-			<?php if( techly_option( 'rt_topbar_social' ) ) { ?>
+			<?php if( techly_option( 'rt_topbar_social' )  || techly_option( 'rt_topbar_phone' ) && techly_option( 'rt_phone' )) { ?>
 			<div class="topbar-right d-flex align-items-center">
 				<?php if( techly_option( 'rt_topbar_phone' ) && techly_option( 'rt_phone' ) ) { ?>
 				<span><i class="icon-rt-phone"></i><a href="tel:<?php echo esc_attr( techly_option( 'rt_phone' ) );?>"><?php techly_html( techly_option( 'rt_phone' ) , false );?></a></span>
 				<?php } ?>
+				<?php if( techly_option( 'rt_topbar_social' ) ) { ?>
 				<div class="social-icon">
 					<?php if( techly_option( 'rt_follow_us_label' ) ) { ?><label><?php echo esc_html( techly_option( 'rt_follow_us_label' ) ); ?></label><?php } ?>
 					<?php techly_get_social_html( '#555' ); ?>
 				</div>
+				<?php } ?>
 			</div>
 			<?php } ?>
 		</div>

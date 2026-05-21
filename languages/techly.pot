@@ -1,4 +1,4 @@
-# Copyright (C) 2025 Techly Theme
+# Copyright (C) 2026 Techly Theme
 # This file is distributed under the same license as the Techly Theme package.
 msgid ""
 msgstr ""
@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-10-01 04:07+0000\n"
+"POT-Creation-Date: 2026-05-21 10:34+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -15,242 +15,248 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. translators: 1: Comments count.
-#: ../comments.php:35
+#: ../comments.php:39
 msgid "%d Comment"
 msgid_plural "%d Comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../comments.php:56
+#: ../comments.php:60
 msgid "Comment navigation"
 msgstr ""
 
-#: ../comments.php:62
+#: ../comments.php:66
 msgid "Older Comments"
 msgstr ""
 
-#: ../comments.php:63
+#: ../comments.php:67
 msgid "Newer Comments"
 msgstr ""
 
-#: ../comments.php:77
+#: ../comments.php:81
 msgid "Comments are closed."
 msgstr ""
 
-#: ../header.php:56
+#: ../header.php:59
 msgid "Type your search........"
 msgstr ""
 
-#: ../inc/template-tags.php:212
+#. translators: %s: Theme Location
+#: ../inc/template-tags.php:216
 msgid "Add %s Menu"
 msgstr ""
 
-#: ../inc/template-tags.php:213
+#: ../inc/template-tags.php:217
 msgid "Add a menu"
 msgstr ""
 
-#: ../inc/template-tags.php:216, ../inc/template-tags.php:1367
+#: ../inc/template-tags.php:220, ../inc/template-tags.php:1372
 msgid "Home"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: ../inc/template-tags.php:378, ../inc/Core/Tags.php:50, ../inc/Core/Tags.php:55
+#: ../inc/template-tags.php:383, ../inc/Core/Tags.php:54, ../inc/Core/Tags.php:59
 msgid ", "
 msgstr ""
 
-#: ../inc/template-tags.php:428
-msgid "%s %s"
+#. translators: 1: Prefix text, 2: Author link
+#: ../inc/template-tags.php:433
+msgid "%1$s %2$s"
 msgstr ""
 
-#: ../inc/template-tags.php:767
+#. translators: %s: Reading Min Time
+#: ../inc/template-tags.php:771
 msgid "%s mins read"
 msgstr ""
 
-#: ../inc/template-tags.php:765
+#: ../inc/template-tags.php:769
 msgid "1 min read"
 msgstr ""
 
-#: ../inc/template-tags.php:763
+#: ../inc/template-tags.php:767
 msgid "%s hours read"
 msgstr ""
 
-#: ../inc/template-tags.php:761
+#: ../inc/template-tags.php:765
 msgid "Less than a minute"
 msgstr ""
 
-#: ../inc/template-tags.php:851, ../inc/Helpers/Fns.php:363
+#: ../inc/template-tags.php:855, ../inc/Helpers/Fns.php:364
 msgid "Views"
 msgstr ""
 
-#: ../inc/template-tags.php:849
+#: ../inc/template-tags.php:853
 msgid "View"
 msgstr ""
 
-#: ../inc/template-tags.php:872, ../inc/Api/Customizer/Sections/Labels.php:118
+#: ../inc/template-tags.php:876, ../inc/Api/Customizer/Sections/Labels.php:119
 msgid "By"
 msgstr ""
 
-#: ../inc/template-tags.php:878
+#. translators: %s: Comments Number
+#: ../inc/template-tags.php:882
 msgid "Comment: %s"
 msgid_plural "Comments: %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/template-tags.php:1184
+#: ../inc/template-tags.php:1189
 msgid "Ph: "
 msgstr ""
 
-#: ../inc/template-tags.php:1439
+#: ../inc/template-tags.php:1444
 msgid "Blog"
 msgstr ""
 
-#: ../inc/template-tags.php:1430
+#: ../inc/template-tags.php:1435
 msgid "Posts by: "
 msgstr ""
 
-#: ../inc/template-tags.php:1402
+#: ../inc/template-tags.php:1407
 msgid "Posts Category: "
 msgstr ""
 
-#: ../inc/template-tags.php:1390
+#: ../inc/template-tags.php:1395
 msgid "404"
 msgstr ""
 
-#: ../inc/template-tags.php:1385
+#: ../inc/template-tags.php:1390
 msgid "Search results for: "
 msgstr ""
 
-#: ../inc/template-tags.php:1380
+#: ../inc/template-tags.php:1385
 msgid "Posts made in: "
 msgstr ""
 
-#: ../inc/template-tags.php:1373
+#: ../inc/template-tags.php:1378
 msgid "Posts Tagged: "
 msgstr ""
 
-#: ../inc/template-tags.php:1478
+#: ../inc/template-tags.php:1483
 msgid "Pingback:"
 msgstr ""
 
-#: ../inc/template-tags.php:1498
-msgid "<cite class=\"fn\">%s</cite>"
-msgstr ""
-
 #. translators: 1: date, 2: time
-#: ../inc/template-tags.php:1504
+#: ../inc/template-tags.php:1516
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/template-tags.php:1509
+#: ../inc/template-tags.php:1521
 msgid "Edit"
 msgstr ""
 
-#: ../inc/template-tags.php:1520
+#: ../inc/template-tags.php:1531
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../inc/template-tags.php:1531
-msgid ""
+#: ../inc/template-tags.php:1543
+msgid "Reply"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:46, ../inc/Api/Customizer/Sections/ColorSite.php:48
+#: ../inc/Api/Gutenberg.php:50, ../inc/Api/Customizer/Sections/ColorSite.php:49
 msgid "Primary Color"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:51, ../inc/Api/Customizer/Sections/ColorSite.php:57
+#: ../inc/Api/Gutenberg.php:55, ../inc/Api/Customizer/Sections/ColorSite.php:58
 msgid "Secondary Color"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:56
+#: ../inc/Api/Gutenberg.php:60
 msgid "Yellow Color"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:61
+#: ../inc/Api/Gutenberg.php:65
 msgid "Dark gray"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:66
+#: ../inc/Api/Gutenberg.php:70
 msgid "light gray"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:71
+#: ../inc/Api/Gutenberg.php:75
 msgid "white"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:79
+#: ../inc/Api/Gutenberg.php:83
 msgid "Small"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:84
+#: ../inc/Api/Gutenberg.php:88
 msgid "Normal"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:89
+#: ../inc/Api/Gutenberg.php:93
 msgid "Large"
 msgstr ""
 
-#: ../inc/Api/Gutenberg.php:94
+#: ../inc/Api/Gutenberg.php:98
 msgid "Huge"
 msgstr ""
 
-#: ../inc/Core/Sidebar.php:31
+#. translators: %s: Sidebar
+#: ../inc/Core/Sidebar.php:34
 msgctxt "Widget Name"
-msgid "%s"
+msgid "Sidebar: %s"
 msgstr ""
 
-#: ../inc/Core/Tags.php:35
+#. translators: %s: Posted on
+#: ../inc/Core/Tags.php:39
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#: ../inc/Core/Tags.php:39
+#. translators: %s: Posted on
+#: ../inc/Core/Tags.php:43
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: ../inc/Core/Tags.php:52
+#. translators: %s: Category List
+#: ../inc/Core/Tags.php:56
 msgid "Posted in %1$s"
 msgstr ""
 
-#: ../inc/Core/Tags.php:57
+#. translators: %s: Tags List
+#: ../inc/Core/Tags.php:61
 msgid "Tagged %1$s"
 msgstr ""
 
 #. translators: %s: post title
-#: ../inc/Core/Tags.php:63
+#: ../inc/Core/Tags.php:67
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: ../inc/Core/Tags.php:69
+#: ../inc/Core/Tags.php:73
 msgid "Edit %s"
 msgstr ""
 
-#: ../inc/Custom/Extras.php:142
+#: ../inc/Custom/Extras.php:145
 msgid "Make as Mega Menu"
 msgstr ""
 
-#: ../inc/Custom/Extras.php:144
+#: ../inc/Custom/Extras.php:147
 msgid "Choose Mega Menu"
 msgstr ""
 
-#: ../inc/Custom/Extras.php:159
+#. translators: %1$s: Menu Item. %2$s:Label Hide
+#: ../inc/Custom/Extras.php:165
 msgid "Mega menu - %1$s Col %2$s"
 msgstr ""
 
-#: ../inc/Custom/Extras.php:171
+#: ../inc/Custom/Extras.php:180
 msgid "Query String"
 msgstr ""
 
-#: ../inc/Custom/Extras.php:230
+#: ../inc/Custom/Extras.php:243
 msgid "Search here..."
 msgstr ""
 
-#: ../inc/Custom/Extras.php:233
+#: ../inc/Custom/Extras.php:246
 msgid "Search"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:33, ../inc/Helpers/Fns.php:72, ../inc/Helpers/Fns.php:373
+#: ../inc/Helpers/Fns.php:33, ../inc/Helpers/Fns.php:72, ../inc/Helpers/Fns.php:374
 msgid "Facebook"
 msgstr ""
 
@@ -258,15 +264,15 @@ msgstr ""
 msgid "Twitter"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:41, ../inc/Helpers/Fns.php:82, ../inc/Helpers/Fns.php:375
+#: ../inc/Helpers/Fns.php:41, ../inc/Helpers/Fns.php:82, ../inc/Helpers/Fns.php:376
 msgid "Linkedin"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:45, ../inc/Helpers/Fns.php:87, ../inc/Helpers/Fns.php:378
+#: ../inc/Helpers/Fns.php:45, ../inc/Helpers/Fns.php:87, ../inc/Helpers/Fns.php:379
 msgid "Youtube"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:49, ../inc/Helpers/Fns.php:92, ../inc/Helpers/Fns.php:376
+#: ../inc/Helpers/Fns.php:49, ../inc/Helpers/Fns.php:92, ../inc/Helpers/Fns.php:377
 msgid "Pinterest"
 msgstr ""
 
@@ -278,7 +284,7 @@ msgstr ""
 msgid "TikTok"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:102, ../inc/Helpers/Fns.php:377
+#: ../inc/Helpers/Fns.php:102, ../inc/Helpers/Fns.php:378
 msgid "Whatsapp"
 msgstr ""
 
@@ -290,297 +296,297 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:313, ../inc/Api/Customizer/Sections/Blog.php:50, ../inc/Api/Customizer/Sections/Blog.php:62
+#: ../inc/Helpers/Fns.php:314, ../inc/Api/Customizer/Sections/Blog.php:51, ../inc/Api/Customizer/Sections/Blog.php:63
 msgid "Default From Theme"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:314
+#: ../inc/Helpers/Fns.php:315
 msgid "Border Style"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:315
+#: ../inc/Helpers/Fns.php:316
 msgid "Before Dash ( — )"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:316
+#: ../inc/Helpers/Fns.php:317
 msgid "Before Dash with BG ( — )"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:317
+#: ../inc/Helpers/Fns.php:318
 msgid "After Pipe ( | )"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:335
+#: ../inc/Helpers/Fns.php:336
 msgid "Style 1 (Default From Theme)"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:336
+#: ../inc/Helpers/Fns.php:337
 msgid "Style 2 (Container Width Thumb)"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:337
+#: ../inc/Helpers/Fns.php:338
 msgid "Style 3 (Transparent Thumb)"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:338
+#: ../inc/Helpers/Fns.php:339
 msgid "Style 4 (Content Without Sidbar)"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:339
+#: ../inc/Helpers/Fns.php:340
 msgid "Style 5 (Meta Under Thumb)"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:357
+#: ../inc/Helpers/Fns.php:358
 msgid "Author"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:358, ../inc/Api/Customizer/Sections/Project.php:159, ../views/content-single-project.php:51
+#: ../inc/Helpers/Fns.php:359, ../inc/Api/Customizer/Sections/Project.php:160, ../views/content-single-project.php:55
 msgid "Date"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:359, ../inc/Api/Customizer/Sections/WooArchiveSettings.php:55, ../views/content-single-project.php:36
+#: ../inc/Helpers/Fns.php:360, ../inc/Api/Customizer/Sections/WooArchiveSettings.php:55, ../views/content-single-project.php:40
 msgid "Category"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:360
+#: ../inc/Helpers/Fns.php:361
 msgid "Tag"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:361
+#: ../inc/Helpers/Fns.php:362
 msgid "Comment"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:362
+#: ../inc/Helpers/Fns.php:363
 msgid "Reading"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:374
+#: ../inc/Helpers/Fns.php:375
 msgid "Twitter X"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:427
+#: ../inc/Helpers/Fns.php:428
 msgid "Main Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:432
+#: ../inc/Helpers/Fns.php:433
 msgid "Single Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:437
+#: ../inc/Helpers/Fns.php:438
 msgid "Service Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:449
+#: ../inc/Helpers/Fns.php:450
 msgid "WooCommerce Archive Sidebar"
 msgstr ""
 
-#: ../inc/Helpers/Fns.php:454
+#: ../inc/Helpers/Fns.php:455
 msgid "WooCommerce Single Sidebar"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:295
+#: ../inc/Lib/class-tgm-plugin-activation.php:299
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:296
+#: ../inc/Lib/class-tgm-plugin-activation.php:300
 msgid "Install Plugins"
 msgstr ""
 
 #. translators: %s: plugin name.
-#: ../inc/Lib/class-tgm-plugin-activation.php:298
+#: ../inc/Lib/class-tgm-plugin-activation.php:302
 msgid "Installing Plugin: %s"
 msgstr ""
 
 #. translators: %s: plugin name.
-#: ../inc/Lib/class-tgm-plugin-activation.php:300
+#: ../inc/Lib/class-tgm-plugin-activation.php:304
 msgid "Updating Plugin: %s"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:301
+#: ../inc/Lib/class-tgm-plugin-activation.php:305
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:302
+#: ../inc/Lib/class-tgm-plugin-activation.php:306
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:308
+#: ../inc/Lib/class-tgm-plugin-activation.php:312
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:314
+#: ../inc/Lib/class-tgm-plugin-activation.php:318
 msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
 msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:320
+#: ../inc/Lib/class-tgm-plugin-activation.php:324
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:326
+#: ../inc/Lib/class-tgm-plugin-activation.php:330
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:332
+#: ../inc/Lib/class-tgm-plugin-activation.php:336
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:338
+#: ../inc/Lib/class-tgm-plugin-activation.php:342
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:343
+#: ../inc/Lib/class-tgm-plugin-activation.php:347
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:348
+#: ../inc/Lib/class-tgm-plugin-activation.php:352
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:353
+#: ../inc/Lib/class-tgm-plugin-activation.php:357
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:354, ../inc/Lib/class-tgm-plugin-activation.php:795, ../inc/Lib/class-tgm-plugin-activation.php:2501, ../inc/Lib/class-tgm-plugin-activation.php:3548
+#: ../inc/Lib/class-tgm-plugin-activation.php:358, ../inc/Lib/class-tgm-plugin-activation.php:799, ../inc/Lib/class-tgm-plugin-activation.php:2505, ../inc/Lib/class-tgm-plugin-activation.php:3552
 msgid "Return to the Dashboard"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:355, ../inc/Lib/class-tgm-plugin-activation.php:3127
+#: ../inc/Lib/class-tgm-plugin-activation.php:359, ../inc/Lib/class-tgm-plugin-activation.php:3131
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:356, ../inc/Lib/class-tgm-plugin-activation.php:2920
+#: ../inc/Lib/class-tgm-plugin-activation.php:360, ../inc/Lib/class-tgm-plugin-activation.php:2924
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: plugin name.
-#: ../inc/Lib/class-tgm-plugin-activation.php:358
+#: ../inc/Lib/class-tgm-plugin-activation.php:362
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: ../inc/Lib/class-tgm-plugin-activation.php:360
+#: ../inc/Lib/class-tgm-plugin-activation.php:364
 msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
 msgstr ""
 
 #. translators: 1: dashboard link.
-#: ../inc/Lib/class-tgm-plugin-activation.php:362
+#: ../inc/Lib/class-tgm-plugin-activation.php:366
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:363
+#: ../inc/Lib/class-tgm-plugin-activation.php:367
 msgid "Dismiss this notice"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:364
+#: ../inc/Lib/class-tgm-plugin-activation.php:368
 msgid "There are one or more required or recommended plugins to install, update or activate."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:365
+#: ../inc/Lib/class-tgm-plugin-activation.php:369
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:490
+#: ../inc/Lib/class-tgm-plugin-activation.php:494
 msgid "This plugin needs to be updated to be compatible with your theme."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:491
+#: ../inc/Lib/class-tgm-plugin-activation.php:495
 msgid "Update Required"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:905
+#: ../inc/Lib/class-tgm-plugin-activation.php:909
 msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:905, ../inc/Lib/class-tgm-plugin-activation.php:902
+#: ../inc/Lib/class-tgm-plugin-activation.php:909, ../inc/Lib/class-tgm-plugin-activation.php:906
 msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:902
+#: ../inc/Lib/class-tgm-plugin-activation.php:906
 msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:1089, ../inc/Lib/class-tgm-plugin-activation.php:2916
+#: ../inc/Lib/class-tgm-plugin-activation.php:1093, ../inc/Lib/class-tgm-plugin-activation.php:2920
 msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr ""
 
 #. translators: %s: version number
-#: ../inc/Lib/class-tgm-plugin-activation.php:1950
+#: ../inc/Lib/class-tgm-plugin-activation.php:1954
 msgid "TGMPA v%s"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2241
+#: ../inc/Lib/class-tgm-plugin-activation.php:2245
 msgid "Required"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2244
+#: ../inc/Lib/class-tgm-plugin-activation.php:2248
 msgid "Recommended"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2260
+#: ../inc/Lib/class-tgm-plugin-activation.php:2264
 msgid "WordPress Repository"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2263
+#: ../inc/Lib/class-tgm-plugin-activation.php:2267
 msgid "External Source"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2266
+#: ../inc/Lib/class-tgm-plugin-activation.php:2270
 msgid "Pre-Packaged"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2283
+#: ../inc/Lib/class-tgm-plugin-activation.php:2287
 msgid "Not Installed"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2289
+#: ../inc/Lib/class-tgm-plugin-activation.php:2293
 msgid "Active"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2287
+#: ../inc/Lib/class-tgm-plugin-activation.php:2291
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2301
+#: ../inc/Lib/class-tgm-plugin-activation.php:2305
 msgid "Update recommended"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2298
+#: ../inc/Lib/class-tgm-plugin-activation.php:2302
 msgid "Requires Update"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2295
+#: ../inc/Lib/class-tgm-plugin-activation.php:2299
 msgid "Required Update not Available"
 msgstr ""
 
 #. translators: 1: install status, 2: update status
-#: ../inc/Lib/class-tgm-plugin-activation.php:2310
+#: ../inc/Lib/class-tgm-plugin-activation.php:2314
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr ""
 
 #. translators: 1: number of plugins.
-#: ../inc/Lib/class-tgm-plugin-activation.php:2356
+#: ../inc/Lib/class-tgm-plugin-activation.php:2360
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
@@ -588,1990 +594,2006 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: ../inc/Lib/class-tgm-plugin-activation.php:2360
+#: ../inc/Lib/class-tgm-plugin-activation.php:2364
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: ../inc/Lib/class-tgm-plugin-activation.php:2364
+#: ../inc/Lib/class-tgm-plugin-activation.php:2368
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: ../inc/Lib/class-tgm-plugin-activation.php:2368
+#: ../inc/Lib/class-tgm-plugin-activation.php:2372
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2450
+#: ../inc/Lib/class-tgm-plugin-activation.php:2454
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2458
+#: ../inc/Lib/class-tgm-plugin-activation.php:2462
 msgid "Installed version:"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2466
+#: ../inc/Lib/class-tgm-plugin-activation.php:2470
 msgid "Minimum required version:"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2478
+#: ../inc/Lib/class-tgm-plugin-activation.php:2482
 msgid "Available version:"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2501
+#: ../inc/Lib/class-tgm-plugin-activation.php:2505
 msgid "No plugins to install, update or activate."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2515
+#: ../inc/Lib/class-tgm-plugin-activation.php:2519
 msgid "Plugin"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2516
+#: ../inc/Lib/class-tgm-plugin-activation.php:2520
 msgid "Source"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2517
+#: ../inc/Lib/class-tgm-plugin-activation.php:2521
 msgid "Type"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2521
+#: ../inc/Lib/class-tgm-plugin-activation.php:2525
 msgid "Version"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2522
+#: ../inc/Lib/class-tgm-plugin-activation.php:2526
 msgid "Status"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: ../inc/Lib/class-tgm-plugin-activation.php:2576
+#: ../inc/Lib/class-tgm-plugin-activation.php:2580
 msgid "Update %2$s"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: ../inc/Lib/class-tgm-plugin-activation.php:2582
+#: ../inc/Lib/class-tgm-plugin-activation.php:2586
 msgid "Activate %2$s"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2571
+#: ../inc/Lib/class-tgm-plugin-activation.php:2575
 msgid "Install %2$s"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2652
+#: ../inc/Lib/class-tgm-plugin-activation.php:2656
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2685
+#: ../inc/Lib/class-tgm-plugin-activation.php:2689
 msgid "Install"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2691
+#: ../inc/Lib/class-tgm-plugin-activation.php:2695
 msgid "Update"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2694
+#: ../inc/Lib/class-tgm-plugin-activation.php:2698
 msgid "Activate"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2727
+#: ../inc/Lib/class-tgm-plugin-activation.php:2731
 msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2725
+#: ../inc/Lib/class-tgm-plugin-activation.php:2729
 msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2770
+#: ../inc/Lib/class-tgm-plugin-activation.php:2774
 msgid "No plugins are available to be updated at this time."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2768
+#: ../inc/Lib/class-tgm-plugin-activation.php:2772
 msgid "No plugins are available to be installed at this time."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2876
+#: ../inc/Lib/class-tgm-plugin-activation.php:2880
 msgid "No plugins were selected to be activated. No action taken."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:2902
+#: ../inc/Lib/class-tgm-plugin-activation.php:2906
 msgid "No plugins are available to be activated at this time."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3126
+#: ../inc/Lib/class-tgm-plugin-activation.php:3130
 msgid "Plugin activation failed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: error message.
-#: ../inc/Lib/class-tgm-plugin-activation.php:3469
+#: ../inc/Lib/class-tgm-plugin-activation.php:3473
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: ../inc/Lib/class-tgm-plugin-activation.php:3471
+#: ../inc/Lib/class-tgm-plugin-activation.php:3475
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3483
+#: ../inc/Lib/class-tgm-plugin-activation.php:3487
 msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: ../inc/Lib/class-tgm-plugin-activation.php:3485
+#: ../inc/Lib/class-tgm-plugin-activation.php:3489
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3486
+#: ../inc/Lib/class-tgm-plugin-activation.php:3490
 msgid "All installations have been completed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: ../inc/Lib/class-tgm-plugin-activation.php:3488
+#: ../inc/Lib/class-tgm-plugin-activation.php:3492
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3475
+#: ../inc/Lib/class-tgm-plugin-activation.php:3479
 msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3477
+#: ../inc/Lib/class-tgm-plugin-activation.php:3481
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3478
+#: ../inc/Lib/class-tgm-plugin-activation.php:3482
 msgid "All installations and activations have been completed."
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3480
+#: ../inc/Lib/class-tgm-plugin-activation.php:3484
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../inc/Lib/class-tgm-plugin-activation.php:3466
+#: ../inc/Lib/class-tgm-plugin-activation.php:3470
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../inc/Modules/AjaxSearch.php:57
+#: ../inc/Modules/AjaxSearch.php:61
 msgid "No Results Found"
 msgstr ""
 
-#: ../inc/Modules/AjaxSearch.php:46
+#: ../inc/Modules/AjaxSearch.php:50
 msgid "All Category"
 msgstr ""
 
-#: ../inc/Modules/ProjectRelated.php:145, ../inc/Modules/ServiceRelated.php:153, ../views/content-project-2.php:58, ../views/content-project.php:59, ../views/content-service.php:58
+#: ../inc/Modules/Pagination.php:47
+msgid "1"
+msgstr ""
+
+#: ../inc/Modules/ProjectRelated.php:146, ../inc/Modules/ServiceRelated.php:154, ../views/content-project-2.php:62, ../views/content-project.php:63, ../views/content-service.php:55
 msgid "Discover More"
 msgstr ""
 
-#: ../inc/Modules/TgmConfig.php:51
+#: ../inc/Modules/TgmConfig.php:55
 msgid "Breadcrumb NavXT"
 msgstr ""
 
-#: ../inc/Modules/TgmConfig.php:56
+#: ../inc/Modules/TgmConfig.php:60
 msgid "Elementor Page Builder"
 msgstr ""
 
-#: ../inc/Modules/TgmConfig.php:61
+#: ../inc/Modules/TgmConfig.php:65
 msgid "WP Fluent Forms"
 msgstr ""
 
-#: ../inc/Modules/TgmConfig.php:66
+#: ../inc/Modules/TgmConfig.php:70
 msgid "Easy Demo Importer"
 msgstr ""
 
-#: ../inc/Plugins/TechlyWcFunctions.php:189
+#: ../inc/Plugins/TechlyWcFunctions.php:193
 msgid "Sale!"
 msgstr ""
 
-#: ../inc/Plugins/TechlyWcFunctions.php:354
+#: ../inc/Plugins/TechlyWcFunctions.php:363
 msgid "Share:"
 msgstr ""
 
-#: ../inc/Setup/Menus.php:26
+#: ../inc/Setup/Menus.php:29
 msgid "Primary"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:18
+#: ../inc/Traits/LayoutControlsTraits.php:20
 msgid "Left Sidebar"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:19
+#: ../inc/Traits/LayoutControlsTraits.php:21
 msgid "Right Sidebar"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:36, ../inc/Api/Customizer/Sections/Footer.php:52, ../inc/Api/Customizer/Sections/Header.php:46
+#: ../inc/Traits/LayoutControlsTraits.php:38, ../inc/Api/Customizer/Sections/Footer.php:53, ../inc/Api/Customizer/Sections/Header.php:47
 msgid "Choose Layout"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:45, ../inc/Api/Customizer/Sections/Footer.php:63, ../inc/Api/Customizer/Sections/Header.php:70
+#: ../inc/Traits/LayoutControlsTraits.php:47, ../inc/Api/Customizer/Sections/Footer.php:64, ../inc/Api/Customizer/Sections/Header.php:71
 msgid "Full Width"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:56
+#: ../inc/Traits/LayoutControlsTraits.php:58
 msgid "Choose a Sidebar"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:63
+#: ../inc/Traits/LayoutControlsTraits.php:65
 msgid "Page Background Image"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:64
+#: ../inc/Traits/LayoutControlsTraits.php:66
 msgid "Upload Background Image"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:65
+#: ../inc/Traits/LayoutControlsTraits.php:67
 msgid "Background Image"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:70
+#: ../inc/Traits/LayoutControlsTraits.php:72
 msgid "Page Background Color"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:71, ../inc/Traits/LayoutControlsTraits.php:149
+#: ../inc/Traits/LayoutControlsTraits.php:73, ../inc/Traits/LayoutControlsTraits.php:151
 msgid "Inter Background Color"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:76
+#: ../inc/Traits/LayoutControlsTraits.php:78
 msgid "Header Settings"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:82
+#: ../inc/Traits/LayoutControlsTraits.php:84
 msgid "Header Layout"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:84, ../inc/Traits/LayoutControlsTraits.php:95, ../inc/Traits/LayoutControlsTraits.php:111, ../inc/Traits/LayoutControlsTraits.php:122, ../inc/Traits/LayoutControlsTraits.php:133, ../inc/Traits/LayoutControlsTraits.php:162
+#: ../inc/Traits/LayoutControlsTraits.php:86, ../inc/Traits/LayoutControlsTraits.php:97, ../inc/Traits/LayoutControlsTraits.php:113, ../inc/Traits/LayoutControlsTraits.php:124, ../inc/Traits/LayoutControlsTraits.php:135, ../inc/Traits/LayoutControlsTraits.php:164
 msgid "--Default--"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:85, ../inc/Traits/LayoutControlsTraits.php:163
+#: ../inc/Traits/LayoutControlsTraits.php:87, ../inc/Traits/LayoutControlsTraits.php:165
 msgid "Layout 1"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:86, ../inc/Traits/LayoutControlsTraits.php:164
+#: ../inc/Traits/LayoutControlsTraits.php:88, ../inc/Traits/LayoutControlsTraits.php:166
 msgid "Layout 2"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:92
+#: ../inc/Traits/LayoutControlsTraits.php:94
 msgid "Top Bar"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:96, ../inc/Traits/LayoutControlsTraits.php:112, ../inc/Traits/LayoutControlsTraits.php:123, ../inc/Traits/LayoutControlsTraits.php:134
+#: ../inc/Traits/LayoutControlsTraits.php:98, ../inc/Traits/LayoutControlsTraits.php:114, ../inc/Traits/LayoutControlsTraits.php:125, ../inc/Traits/LayoutControlsTraits.php:136
 msgid "On"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:97, ../inc/Traits/LayoutControlsTraits.php:113, ../inc/Traits/LayoutControlsTraits.php:124, ../inc/Traits/LayoutControlsTraits.php:135
+#: ../inc/Traits/LayoutControlsTraits.php:99, ../inc/Traits/LayoutControlsTraits.php:115, ../inc/Traits/LayoutControlsTraits.php:126, ../inc/Traits/LayoutControlsTraits.php:137
 msgid "Off"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:103
+#: ../inc/Traits/LayoutControlsTraits.php:105
 msgid "Banner Settings"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:109, ../inc/Api/Customizer/Sections/Banner.php:46
+#: ../inc/Traits/LayoutControlsTraits.php:111, ../inc/Api/Customizer/Sections/Banner.php:47
 msgid "Banner Visibility"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:120, ../inc/Api/Customizer/Sections/Banner.php:138
+#: ../inc/Traits/LayoutControlsTraits.php:122, ../inc/Api/Customizer/Sections/Banner.php:139
 msgid "Banner Title"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:131, ../inc/Api/Customizer/Sections/Banner.php:145
+#: ../inc/Traits/LayoutControlsTraits.php:133, ../inc/Api/Customizer/Sections/Banner.php:146
 msgid "Banner Breadcrumb"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:141, ../inc/Traits/LayoutControlsTraits.php:143
+#: ../inc/Traits/LayoutControlsTraits.php:143, ../inc/Traits/LayoutControlsTraits.php:145
 msgid "Banner Image"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:142, ../inc/Api/Customizer/Sections/Banner.php:73
+#: ../inc/Traits/LayoutControlsTraits.php:144, ../inc/Api/Customizer/Sections/Banner.php:74
 msgid "Upload Banner Image"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:148, ../inc/Api/Customizer/Sections/Banner.php:80
+#: ../inc/Traits/LayoutControlsTraits.php:150, ../inc/Api/Customizer/Sections/Banner.php:81
 msgid "Banner Background Color"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:154
+#: ../inc/Traits/LayoutControlsTraits.php:156
 msgid "Footer Settings"
 msgstr ""
 
-#: ../inc/Traits/LayoutControlsTraits.php:160
+#: ../inc/Traits/LayoutControlsTraits.php:162
 msgid "Footer Layout"
 msgstr ""
 
-#: ../inc/Traits/SingletonTraits.php:42, ../inc/Traits/SingletonTraits.php:51
+#: ../inc/Traits/SingletonTraits.php:44, ../inc/Traits/SingletonTraits.php:53
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:36
+#: ../inc/Api/Customizer/Pannels.php:40
 msgid "Header - Topbar - Menu"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:37
+#: ../inc/Api/Customizer/Pannels.php:41
 msgid "Techly Header"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:42
+#: ../inc/Api/Customizer/Pannels.php:46
 msgid "Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:43
+#: ../inc/Api/Customizer/Pannels.php:47
 msgid "Techly Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:48
+#: ../inc/Api/Customizer/Pannels.php:52
 msgid "Colors"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:49
+#: ../inc/Api/Customizer/Pannels.php:53
 msgid "Techly Color Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:54
+#: ../inc/Api/Customizer/Pannels.php:58
 msgid "Layout Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:55
+#: ../inc/Api/Customizer/Pannels.php:59
 msgid "Techly Layout Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:60
+#: ../inc/Api/Customizer/Pannels.php:64
 msgid "Contact & Socials"
 msgstr ""
 
-#: ../inc/Api/Customizer/Pannels.php:61
+#: ../inc/Api/Customizer/Pannels.php:65
 msgid "Techly Contact & Socials"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:28
+#: ../inc/Api/Customizer/Sections/Banner.php:29
 msgid "Banner - Breadcrumb"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:29
+#: ../inc/Api/Customizer/Sections/Banner.php:30
 msgid "Banner Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:52
+#: ../inc/Api/Customizer/Sections/Banner.php:53
 msgid "Banner Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:60
+#: ../inc/Api/Customizer/Sections/Banner.php:61
 msgid "Banner Alignment"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:63
+#: ../inc/Api/Customizer/Sections/Banner.php:64
 msgid "Alignment Default"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:64
+#: ../inc/Api/Customizer/Sections/Banner.php:65
 msgid "Alignment Center"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:65
+#: ../inc/Api/Customizer/Sections/Banner.php:66
 msgid "Alignment right"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:72
+#: ../inc/Api/Customizer/Sections/Banner.php:73
 msgid "Banner Background Image"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:74
+#: ../inc/Api/Customizer/Sections/Banner.php:75
 msgid "Banner"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:81
+#: ../inc/Api/Customizer/Sections/Banner.php:82
 msgid "Inter Banner Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:100
+#: ../inc/Api/Customizer/Sections/Banner.php:101
 msgid "Background Opacity"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:101
+#: ../inc/Api/Customizer/Sections/Banner.php:102
 msgid "Inter Banner Opacity"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:107
+#: ../inc/Api/Customizer/Sections/Banner.php:108
 msgid "Banner Padding Top (px)"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:114
+#: ../inc/Api/Customizer/Sections/Banner.php:115
 msgid "Banner Padding Bottom (px)"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:121
+#: ../inc/Api/Customizer/Sections/Banner.php:122
 msgid "Banner Color Mode"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:124, ../inc/Api/Customizer/Sections/Header.php:98
+#: ../inc/Api/Customizer/Sections/Banner.php:125, ../inc/Api/Customizer/Sections/Header.php:99
 msgid "Dark Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:125, ../inc/Api/Customizer/Sections/Header.php:97
+#: ../inc/Api/Customizer/Sections/Banner.php:126, ../inc/Api/Customizer/Sections/Header.php:98
 msgid "Light Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:132
+#: ../inc/Api/Customizer/Sections/Banner.php:133
 msgid "Breadcrumb Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Banner.php:151
+#: ../inc/Api/Customizer/Sections/Banner.php:152
 msgid "Breadcrumb Border"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:29
+#: ../inc/Api/Customizer/Sections/Blog.php:30
 msgid "Blog Archive"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:30
+#: ../inc/Api/Customizer/Sections/Blog.php:31
 msgid "Blog Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:46
+#: ../inc/Api/Customizer/Sections/Blog.php:47
 msgid "Blog Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:47
+#: ../inc/Api/Customizer/Sections/Blog.php:48
 msgid "This option works only for blog layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:51
+#: ../inc/Api/Customizer/Sections/Blog.php:52
 msgid "Grid 2"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:52
+#: ../inc/Api/Customizer/Sections/Blog.php:53
 msgid "List"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:58
+#: ../inc/Api/Customizer/Sections/Blog.php:59
 msgid "Grid Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:59
+#: ../inc/Api/Customizer/Sections/Blog.php:60
 msgid "This option works only for large device"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:63
+#: ../inc/Api/Customizer/Sections/Blog.php:64
 msgid "1 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:64
+#: ../inc/Api/Customizer/Sections/Blog.php:65
 msgid "2 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:65
+#: ../inc/Api/Customizer/Sections/Blog.php:66
 msgid "3 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:66
+#: ../inc/Api/Customizer/Sections/Blog.php:67
 msgid "4 Column"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:72
+#: ../inc/Api/Customizer/Sections/Blog.php:73
 msgid "Grid Column Gap"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:73
+#: ../inc/Api/Customizer/Sections/Blog.php:74
 msgid "This option works only for blog grid gap"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:76
+#: ../inc/Api/Customizer/Sections/Blog.php:77
 msgid "Gap 1"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:77
+#: ../inc/Api/Customizer/Sections/Blog.php:78
 msgid "Gap 2"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:78
+#: ../inc/Api/Customizer/Sections/Blog.php:79
 msgid "Gap 3"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:79
+#: ../inc/Api/Customizer/Sections/Blog.php:80
 msgid "Gap 4"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:80
+#: ../inc/Api/Customizer/Sections/Blog.php:81
 msgid "Gap 5"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:86, ../inc/Api/Customizer/Sections/Project.php:95, ../inc/Api/Customizer/Sections/Service.php:74, ../inc/Api/Customizer/Sections/Team.php:86
+#: ../inc/Api/Customizer/Sections/Blog.php:87, ../inc/Api/Customizer/Sections/Project.php:96, ../inc/Api/Customizer/Sections/Service.php:75, ../inc/Api/Customizer/Sections/Team.php:87
 msgid "Content Limit"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:92
+#: ../inc/Api/Customizer/Sections/Blog.php:93
 msgid "Button Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:93
+#: ../inc/Api/Customizer/Sections/Blog.php:94
 msgid "This option works only for blog button style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:96, ../inc/Api/Customizer/Sections/Blog.php:115, ../inc/Api/Customizer/Sections/Project.php:70
+#: ../inc/Api/Customizer/Sections/Blog.php:97, ../inc/Api/Customizer/Sections/Blog.php:116, ../inc/Api/Customizer/Sections/Project.php:71
 msgid "Default"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:97
+#: ../inc/Api/Customizer/Sections/Blog.php:98
 msgid "Button 2"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:98
+#: ../inc/Api/Customizer/Sections/Blog.php:99
 msgid "Button 3"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:99
+#: ../inc/Api/Customizer/Sections/Blog.php:100
 msgid "Button 4"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:105
+#: ../inc/Api/Customizer/Sections/Blog.php:106
 msgid "Button Radius"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:111
+#: ../inc/Api/Customizer/Sections/Blog.php:112
 msgid "Pagination Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:112
+#: ../inc/Api/Customizer/Sections/Blog.php:113
 msgid "This option works only for blog pagination style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:116
+#: ../inc/Api/Customizer/Sections/Blog.php:117
 msgid "Style 2"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:122
+#: ../inc/Api/Customizer/Sections/Blog.php:123
 msgid "Post Meta Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:127, ../inc/Api/Customizer/Sections/BlogSingle.php:61
+#: ../inc/Api/Customizer/Sections/Blog.php:128, ../inc/Api/Customizer/Sections/BlogSingle.php:62
 msgid "Meta Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:134
+#: ../inc/Api/Customizer/Sections/Blog.php:135
 msgid "Title Above Meta Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:141, ../inc/Api/Customizer/Sections/Blog.php:143, ../inc/Api/Customizer/Sections/BlogSingle.php:53
+#: ../inc/Api/Customizer/Sections/Blog.php:142, ../inc/Api/Customizer/Sections/Blog.php:144, ../inc/Api/Customizer/Sections/BlogSingle.php:54
 msgid "Choose Meta"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:142, ../inc/Api/Customizer/Sections/BlogSingle.php:52, ../inc/Api/Customizer/Sections/BlogSingle.php:104
+#: ../inc/Api/Customizer/Sections/Blog.php:143, ../inc/Api/Customizer/Sections/BlogSingle.php:53, ../inc/Api/Customizer/Sections/BlogSingle.php:105
 msgid "You can sort meta by drag and drop"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:151, ../inc/Api/Customizer/Sections/BlogSingle.php:68
+#: ../inc/Api/Customizer/Sections/Blog.php:152, ../inc/Api/Customizer/Sections/BlogSingle.php:69
 msgid "Visibility Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:156, ../inc/Api/Customizer/Sections/BlogSingle.php:73
+#: ../inc/Api/Customizer/Sections/Blog.php:157, ../inc/Api/Customizer/Sections/BlogSingle.php:74
 msgid "Meta Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:162
+#: ../inc/Api/Customizer/Sections/Blog.php:163
 msgid "Title Above Meta Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:167
+#: ../inc/Api/Customizer/Sections/Blog.php:168
 msgid "Entry Content Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:173
+#: ../inc/Api/Customizer/Sections/Blog.php:174
 msgid "Video Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:179
+#: ../inc/Api/Customizer/Sections/Blog.php:180
 msgid "Entry Footer Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:185, ../inc/Api/Customizer/Sections/Blog.php:190
+#: ../inc/Api/Customizer/Sections/Blog.php:186, ../inc/Api/Customizer/Sections/Blog.php:191
 msgid "Animation"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:196
+#: ../inc/Api/Customizer/Sections/Blog.php:197
 msgid "Entrance Animation"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:197
+#: ../inc/Api/Customizer/Sections/Blog.php:198
 msgid "This option works only for blog animation effect"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:200
+#: ../inc/Api/Customizer/Sections/Blog.php:201
 msgid "bounce"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:201
+#: ../inc/Api/Customizer/Sections/Blog.php:202
 msgid "flash"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:202
+#: ../inc/Api/Customizer/Sections/Blog.php:203
 msgid "pulse"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:203
+#: ../inc/Api/Customizer/Sections/Blog.php:204
 msgid "rubberBand"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:204
+#: ../inc/Api/Customizer/Sections/Blog.php:205
 msgid "shakeX"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:205
+#: ../inc/Api/Customizer/Sections/Blog.php:206
 msgid "shakeY"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:206
+#: ../inc/Api/Customizer/Sections/Blog.php:207
 msgid "headShake"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:207
+#: ../inc/Api/Customizer/Sections/Blog.php:208
 msgid "swing"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:208
+#: ../inc/Api/Customizer/Sections/Blog.php:209
 msgid "fadeIn"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:209
+#: ../inc/Api/Customizer/Sections/Blog.php:210
 msgid "fadeInUp"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:210
+#: ../inc/Api/Customizer/Sections/Blog.php:211
 msgid "fadeInDown"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:211
+#: ../inc/Api/Customizer/Sections/Blog.php:212
 msgid "fadeInLeft"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:212
+#: ../inc/Api/Customizer/Sections/Blog.php:213
 msgid "fadeInRight"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:213
+#: ../inc/Api/Customizer/Sections/Blog.php:214
 msgid "bounceIn"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:214
+#: ../inc/Api/Customizer/Sections/Blog.php:215
 msgid "bounceInUp"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:215
+#: ../inc/Api/Customizer/Sections/Blog.php:216
 msgid "bounceInDown"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:216
+#: ../inc/Api/Customizer/Sections/Blog.php:217
 msgid "bounceInLeft"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:217
+#: ../inc/Api/Customizer/Sections/Blog.php:218
 msgid "bounceInRight"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:218
+#: ../inc/Api/Customizer/Sections/Blog.php:219
 msgid "slideInUp"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:219
+#: ../inc/Api/Customizer/Sections/Blog.php:220
 msgid "slideInDown"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:220
+#: ../inc/Api/Customizer/Sections/Blog.php:221
 msgid "slideInLeft"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:221
+#: ../inc/Api/Customizer/Sections/Blog.php:222
 msgid "slideInRight"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:228
+#: ../inc/Api/Customizer/Sections/Blog.php:229
 msgid "Delay"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Blog.php:235
+#: ../inc/Api/Customizer/Sections/Blog.php:236
 msgid "Duration"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:27
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:28
 msgid "Blog Single"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:28
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:29
 msgid "Blog Single Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:44
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:45
 msgid "Post View Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:51
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:52
 msgid "Choose Single Meta"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:79
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:80
 msgid "Above Meta Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:83
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:84
 msgid "Tag Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:87
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:88
 msgid "Share Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:91
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:92
 msgid "Author Profile Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:95
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:96
 msgid "Caption Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:99
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:100
 msgid "Navigation Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:103
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:104
 msgid "Choose Share Media"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:105
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:106
 msgid "Choose Media"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:114
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:115
 msgid "Post Single Related Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:119, ../inc/Api/Customizer/Sections/Project.php:206, ../inc/Api/Customizer/Sections/Service.php:110, ../inc/Api/Customizer/Sections/Team.php:172
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:120, ../inc/Api/Customizer/Sections/Project.php:207, ../inc/Api/Customizer/Sections/Service.php:111, ../inc/Api/Customizer/Sections/Team.php:173
 msgid "Related Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:125
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:126
 msgid "Post Related Title"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:126
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:127
 msgid "Related Post"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:132, ../inc/Api/Customizer/Sections/Project.php:219, ../inc/Api/Customizer/Sections/Service.php:123, ../inc/Api/Customizer/Sections/Team.php:185
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:133, ../inc/Api/Customizer/Sections/Project.php:220, ../inc/Api/Customizer/Sections/Service.php:124, ../inc/Api/Customizer/Sections/Team.php:186
 msgid "Related Item Limit"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:139, ../inc/Api/Customizer/Sections/Project.php:233, ../inc/Api/Customizer/Sections/Service.php:130, ../inc/Api/Customizer/Sections/Team.php:192
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:140, ../inc/Api/Customizer/Sections/Project.php:234, ../inc/Api/Customizer/Sections/Service.php:131, ../inc/Api/Customizer/Sections/Team.php:193
 msgid "Query Type"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:140
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:141
 msgid "Post Query Type"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:143, ../inc/Api/Customizer/Sections/Project.php:237, ../inc/Api/Customizer/Sections/Service.php:134, ../inc/Api/Customizer/Sections/Team.php:196
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:144, ../inc/Api/Customizer/Sections/Project.php:238, ../inc/Api/Customizer/Sections/Service.php:135, ../inc/Api/Customizer/Sections/Team.php:197
 msgid "Posts in the same Categories"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:144, ../inc/Api/Customizer/Sections/Project.php:238, ../inc/Api/Customizer/Sections/Service.php:135, ../inc/Api/Customizer/Sections/Team.php:197
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:145, ../inc/Api/Customizer/Sections/Project.php:239, ../inc/Api/Customizer/Sections/Service.php:136, ../inc/Api/Customizer/Sections/Team.php:198
 msgid "Posts in the same Tags"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:145, ../inc/Api/Customizer/Sections/Project.php:239, ../inc/Api/Customizer/Sections/Service.php:136, ../inc/Api/Customizer/Sections/Team.php:198
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:146, ../inc/Api/Customizer/Sections/Project.php:240, ../inc/Api/Customizer/Sections/Service.php:137, ../inc/Api/Customizer/Sections/Team.php:199
 msgid "Posts by the same Author"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:152, ../inc/Api/Customizer/Sections/Project.php:246, ../inc/Api/Customizer/Sections/Service.php:143, ../inc/Api/Customizer/Sections/Team.php:205
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:153, ../inc/Api/Customizer/Sections/Project.php:247, ../inc/Api/Customizer/Sections/Service.php:144, ../inc/Api/Customizer/Sections/Team.php:206
 msgid "Sort Order"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:153
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:154
 msgid "Display Post Order"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:156, ../inc/Api/Customizer/Sections/Project.php:250, ../inc/Api/Customizer/Sections/Service.php:147, ../inc/Api/Customizer/Sections/Team.php:209
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:157, ../inc/Api/Customizer/Sections/Project.php:251, ../inc/Api/Customizer/Sections/Service.php:148, ../inc/Api/Customizer/Sections/Team.php:210
 msgid "Recent Posts"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:157, ../inc/Api/Customizer/Sections/Project.php:251, ../inc/Api/Customizer/Sections/Service.php:148, ../inc/Api/Customizer/Sections/Team.php:210
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:158, ../inc/Api/Customizer/Sections/Project.php:252, ../inc/Api/Customizer/Sections/Service.php:149, ../inc/Api/Customizer/Sections/Team.php:211
 msgid "Random Posts"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:158, ../inc/Api/Customizer/Sections/Project.php:252, ../inc/Api/Customizer/Sections/Service.php:149, ../inc/Api/Customizer/Sections/Team.php:211
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:159, ../inc/Api/Customizer/Sections/Project.php:253, ../inc/Api/Customizer/Sections/Service.php:150, ../inc/Api/Customizer/Sections/Team.php:212
 msgid "Last Modified Posts"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:159, ../inc/Api/Customizer/Sections/Project.php:253, ../inc/Api/Customizer/Sections/Service.php:150, ../inc/Api/Customizer/Sections/Team.php:212
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:160, ../inc/Api/Customizer/Sections/Project.php:254, ../inc/Api/Customizer/Sections/Service.php:151, ../inc/Api/Customizer/Sections/Team.php:213
 msgid "Most Commented posts"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/BlogSingle.php:160, ../inc/Api/Customizer/Sections/Project.php:254, ../inc/Api/Customizer/Sections/Service.php:151, ../inc/Api/Customizer/Sections/Team.php:213
+#: ../inc/Api/Customizer/Sections/BlogSingle.php:161, ../inc/Api/Customizer/Sections/Project.php:255, ../inc/Api/Customizer/Sections/Service.php:152, ../inc/Api/Customizer/Sections/Team.php:214
 msgid "Most Viewed posts"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:28
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:29
 msgid "Banner / Breadcrumb Colors"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:29
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:30
 msgid "Banner Color Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:46, ../inc/Api/Customizer/Sections/ColorSite.php:91
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:47, ../inc/Api/Customizer/Sections/ColorSite.php:92
 msgid "Title Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:50
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:51
 msgid "Link Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:54
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:55
 msgid "Link Hover Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:58
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:59
 msgid "Link Active Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:62
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:63
 msgid "Banner Overlay 1 Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorBanner.php:66
+#: ../inc/Api/Customizer/Sections/ColorBanner.php:67
 msgid "Banner Overlay 2 Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:27
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:28
 msgid "Footer Colors"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:28
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:29
 msgid "Footer Color Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:44
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:45
 msgid "Main Footer"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:48
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:49
 msgid "Footer Background"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:52
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:53
 msgid "Footer Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:56
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:57
 msgid "Footer Link"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:60
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:61
 msgid "Footer Link - Hover"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:64
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:65
 msgid "Widget Title"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:68
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:69
 msgid "Input/List/Table Border Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:72
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:73
 msgid "Copyright Area"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:76
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:77
 msgid "Copyright Background"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:80
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:81
 msgid "Copyright Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:84
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:85
 msgid "Copyright Link"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorFooter.php:88
+#: ../inc/Api/Customizer/Sections/ColorFooter.php:89
 msgid "Copyright Link - Hover"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:28
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:29
 msgid "Header Colors"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:29
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:30
 msgid "Header Color Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:46
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:47
 msgid "Default Menu"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:51
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:52
 msgid "Menu Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:56
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:57
 msgid "Menu Hover & Active Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:61
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:62
 msgid "Menu Background Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:66
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:67
 msgid "Sub Menu Background Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:71
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:72
 msgid "Transparent Menu"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:76
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:77
 msgid "TR Menu Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:81
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:82
 msgid "TR Menu Hover & Active Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:86
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:87
 msgid "Others Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorHeader.php:91
+#: ../inc/Api/Customizer/Sections/ColorHeader.php:92
 msgid "Menu Border Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:27
+#: ../inc/Api/Customizer/Sections/ColorSite.php:28
 msgid "Site Colors"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:28
+#: ../inc/Api/Customizer/Sections/ColorSite.php:29
 msgid "Site Color Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:44
+#: ../inc/Api/Customizer/Sections/ColorSite.php:45
 msgid "Site Ascent Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:66
+#: ../inc/Api/Customizer/Sections/ColorSite.php:67
 msgid "Tertiary Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:71
+#: ../inc/Api/Customizer/Sections/ColorSite.php:72
 msgid "Others Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:76
+#: ../inc/Api/Customizer/Sections/ColorSite.php:77
 msgid "Body BG Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:81
+#: ../inc/Api/Customizer/Sections/ColorSite.php:82
 msgid "Body Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:86
+#: ../inc/Api/Customizer/Sections/ColorSite.php:87
 msgid "Border Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:96
+#: ../inc/Api/Customizer/Sections/ColorSite.php:97
 msgid "Button Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:101
+#: ../inc/Api/Customizer/Sections/ColorSite.php:102
 msgid "Button Text Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:106
+#: ../inc/Api/Customizer/Sections/ColorSite.php:107
 msgid "Meta Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:111
+#: ../inc/Api/Customizer/Sections/ColorSite.php:112
 msgid "Meta Light"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:116
+#: ../inc/Api/Customizer/Sections/ColorSite.php:117
 msgid "Gray # 1"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorSite.php:121
+#: ../inc/Api/Customizer/Sections/ColorSite.php:122
 msgid "Gray # 2"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorTopbar.php:27
+#: ../inc/Api/Customizer/Sections/ColorTopbar.php:28
 msgid "Top Bar Colors"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorTopbar.php:28
+#: ../inc/Api/Customizer/Sections/ColorTopbar.php:29
 msgid "Top Bar Color Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorTopbar.php:46
+#: ../inc/Api/Customizer/Sections/ColorTopbar.php:47
 msgid "Topbar Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorTopbar.php:51
+#: ../inc/Api/Customizer/Sections/ColorTopbar.php:52
 msgid "Hover Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/ColorTopbar.php:56
+#: ../inc/Api/Customizer/Sections/ColorTopbar.php:57
 msgid "Topbar Background"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Contact.php:27
+#: ../inc/Api/Customizer/Sections/Contact.php:28
 msgid "Contact Information"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Contact.php:28
+#: ../inc/Api/Customizer/Sections/Contact.php:29
 msgid "Contact Address Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Contact.php:44, ../views/content-single-team.php:84
+#: ../inc/Api/Customizer/Sections/Contact.php:45, ../views/content-single-team.php:88
 msgid "Phone"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Contact.php:49
+#: ../inc/Api/Customizer/Sections/Contact.php:50
 msgid "Email"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Contact.php:54, ../views/content-single-team.php:68
+#: ../inc/Api/Customizer/Sections/Contact.php:55, ../views/content-single-team.php:72
 msgid "Website"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Contact.php:59
+#: ../inc/Api/Customizer/Sections/Contact.php:60
 msgid "Address"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Contact.php:60
+#: ../inc/Api/Customizer/Sections/Contact.php:61
 msgid "Enter company address here."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:26
+#: ../inc/Api/Customizer/Sections/Error.php:27
 msgid "Error Page"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:27
+#: ../inc/Api/Customizer/Sections/Error.php:28
 msgid "Error section."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:43
+#: ../inc/Api/Customizer/Sections/Error.php:44
 msgid "Error Image"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:44
+#: ../inc/Api/Customizer/Sections/Error.php:45
 msgid "Upload error image for your site."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:45
+#: ../inc/Api/Customizer/Sections/Error.php:46
 msgid "Error image"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:50
+#: ../inc/Api/Customizer/Sections/Error.php:51
 msgid "Error Heading"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:51
+#: ../inc/Api/Customizer/Sections/Error.php:52
 msgid "Oops, something went wrong."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:56
+#: ../inc/Api/Customizer/Sections/Error.php:57
 msgid "Error Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:57
+#: ../inc/Api/Customizer/Sections/Error.php:58
 msgid "Sorry! This Page Is Not Available!"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:62
+#: ../inc/Api/Customizer/Sections/Error.php:63
 msgid "Error Button Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Error.php:63
+#: ../inc/Api/Customizer/Sections/Error.php:64
 msgid "Back To Home Page"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:27
+#: ../inc/Api/Customizer/Sections/Footer.php:28
 msgid "Footer"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:28
+#: ../inc/Api/Customizer/Sections/Footer.php:29
 msgid "Footer Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:45
+#: ../inc/Api/Customizer/Sections/Footer.php:46
 msgid "Footer Display"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:46
+#: ../inc/Api/Customizer/Sections/Footer.php:47
 msgid "Show footer display"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:59
+#: ../inc/Api/Customizer/Sections/Footer.php:60
 msgid "Footer Width"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:62, ../inc/Api/Customizer/Sections/Header.php:69
+#: ../inc/Api/Customizer/Sections/Footer.php:63, ../inc/Api/Customizer/Sections/Header.php:70
 msgid "Box Width"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:69
+#: ../inc/Api/Customizer/Sections/Footer.php:70
 msgid "Footer Max Width (PX)"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:70
+#: ../inc/Api/Customizer/Sections/Footer.php:71
 msgid "Enter a number greater than 992."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:76
+#: ../inc/Api/Customizer/Sections/Footer.php:77
 msgid "Sticky Footer"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:77
+#: ../inc/Api/Customizer/Sections/Footer.php:78
 msgid "Show footer at the top when scrolling down"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:82
+#: ../inc/Api/Customizer/Sections/Footer.php:83
 msgid "Social Icon"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:83
+#: ../inc/Api/Customizer/Sections/Footer.php:84
 msgid "Show footer at the social icon, This options available for only Footer layout."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:87
+#: ../inc/Api/Customizer/Sections/Footer.php:88
 msgid "Shape"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:88
+#: ../inc/Api/Customizer/Sections/Footer.php:89
 msgid "Show footer at the shape display"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:93
+#: ../inc/Api/Customizer/Sections/Footer.php:94
 msgid "Footer Left Image"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:94, ../inc/Api/Customizer/Sections/Footer.php:100
+#: ../inc/Api/Customizer/Sections/Footer.php:95, ../inc/Api/Customizer/Sections/Footer.php:101
 msgid "Upload footer image for your site."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:95, ../inc/Api/Customizer/Sections/Footer.php:101
+#: ../inc/Api/Customizer/Sections/Footer.php:96, ../inc/Api/Customizer/Sections/Footer.php:102
 msgid "Footer image"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:99
+#: ../inc/Api/Customizer/Sections/Footer.php:100
 msgid "Footer Right Image"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:106
+#: ../inc/Api/Customizer/Sections/Footer.php:107
 msgid "Footer Copyright Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:107
+#: ../inc/Api/Customizer/Sections/Footer.php:108
 msgid "Copyright© [y] Techly by RadiusTheme"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Footer.php:108
+#: ../inc/Api/Customizer/Sections/Footer.php:109
 msgid "Add [y] flag anywhere for dynamic year."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:26
+#: ../inc/Api/Customizer/Sections/General.php:27
 msgid "General"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:27
+#: ../inc/Api/Customizer/Sections/General.php:28
 msgid "General Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:43
+#: ../inc/Api/Customizer/Sections/General.php:44
 msgid "Enable SVG Upload"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:49
+#: ../inc/Api/Customizer/Sections/General.php:50
 msgid "Preloader"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:54
+#: ../inc/Api/Customizer/Sections/General.php:55
 msgid "Preloader Logo"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:55
+#: ../inc/Api/Customizer/Sections/General.php:56
 msgid "Upload preloader logo for your site."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:56, ../inc/Api/Customizer/Sections/SiteIdentity.php:38
+#: ../inc/Api/Customizer/Sections/General.php:57, ../inc/Api/Customizer/Sections/SiteIdentity.php:39
 msgid "Logo"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:62
+#: ../inc/Api/Customizer/Sections/General.php:63
 msgid "Preloader Background Color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:68
+#: ../inc/Api/Customizer/Sections/General.php:69
 msgid "Back to Top"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:73
+#: ../inc/Api/Customizer/Sections/General.php:74
 msgid "Remove Admin Bar"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:74
+#: ../inc/Api/Customizer/Sections/General.php:75
 msgid "This option not work for administrator role."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:79
+#: ../inc/Api/Customizer/Sections/General.php:80
 msgid "Container Width"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:82
+#: ../inc/Api/Customizer/Sections/General.php:83
 msgid "1554px"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:83
+#: ../inc/Api/Customizer/Sections/General.php:84
 msgid "1364px"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:84
+#: ../inc/Api/Customizer/Sections/General.php:85
 msgid "1320px"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:85
+#: ../inc/Api/Customizer/Sections/General.php:86
 msgid "1200px"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:86
+#: ../inc/Api/Customizer/Sections/General.php:87
 msgid "1140px"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:92
+#: ../inc/Api/Customizer/Sections/General.php:93
 msgid "Image Blend"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:94
+#: ../inc/Api/Customizer/Sections/General.php:95
 msgid "This option for use all image blend mode."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/General.php:99
+#: ../inc/Api/Customizer/Sections/General.php:100
 msgid "Enable Google Fonts"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:28
+#: ../inc/Api/Customizer/Sections/Header.php:29
 msgid "Header Menu"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:29
+#: ../inc/Api/Customizer/Sections/Header.php:30
 msgid "Header Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:54, ../inc/Api/Customizer/Sections/Header.php:57
+#: ../inc/Api/Customizer/Sections/Header.php:55, ../inc/Api/Customizer/Sections/Header.php:58
 msgid "Menu Alignment"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:58
+#: ../inc/Api/Customizer/Sections/Header.php:59
 msgid "Left Alignment"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:59
+#: ../inc/Api/Customizer/Sections/Header.php:60
 msgid "Center Alignment"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:60
+#: ../inc/Api/Customizer/Sections/Header.php:61
 msgid "Right Alignment"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:66
+#: ../inc/Api/Customizer/Sections/Header.php:67
 msgid "Header Width"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:76
+#: ../inc/Api/Customizer/Sections/Header.php:77
 msgid "Header Max Width (PX)"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:77
+#: ../inc/Api/Customizer/Sections/Header.php:78
 msgid "Enter a number greater than 1440. Remove value for 100%"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:83
+#: ../inc/Api/Customizer/Sections/Header.php:84
 msgid "Sticky Header"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:84
+#: ../inc/Api/Customizer/Sections/Header.php:85
 msgid "Show header at the top when scrolling down"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:89
+#: ../inc/Api/Customizer/Sections/Header.php:90
 msgid "Transparent Header"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:94
+#: ../inc/Api/Customizer/Sections/Header.php:95
 msgid "Transparent color"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:105
+#: ../inc/Api/Customizer/Sections/Header.php:106
 msgid "Header Dark Shadow"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:111
+#: ../inc/Api/Customizer/Sections/Header.php:112
 msgid "Header Border"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:122
+#: ../inc/Api/Customizer/Sections/Header.php:123
 msgid "User Login ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:128
+#: ../inc/Api/Customizer/Sections/Header.php:129
 msgid "Search Icon ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:134
+#: ../inc/Api/Customizer/Sections/Header.php:135
 msgid "Hamburger Menu"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:135
+#: ../inc/Api/Customizer/Sections/Header.php:136
 msgid "It will be hide only for desktop."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:141
+#: ../inc/Api/Customizer/Sections/Header.php:142
 msgid "Icon Separator"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:147
+#: ../inc/Api/Customizer/Sections/Header.php:148
 msgid "Offcanvas Social"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:153
+#: ../inc/Api/Customizer/Sections/Header.php:154
 msgid "Cart Icon ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:164
+#: ../inc/Api/Customizer/Sections/Header.php:165
 msgid "Get Started Button ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Header.php:170
+#: ../inc/Api/Customizer/Sections/Header.php:171
 msgid "Button Link"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:28
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:29
 msgid "Header Topbar"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:29
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:30
 msgid "Top Bar Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:46
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:47
 msgid "Topbar Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:52
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:53
 msgid "Topbar Style"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:59
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:60
 msgid "Topbar Address ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:65
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:66
 msgid "Topbar Phone ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:71
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:72
 msgid "Topbar Email ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:77
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:78
 msgid "Topbar Website ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:83
+#: ../inc/Api/Customizer/Sections/HeaderTopbar.php:84
 msgid "Topbar Social ?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:26
+#: ../inc/Api/Customizer/Sections/Labels.php:27
 msgid "Modify Static Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:27
+#: ../inc/Api/Customizer/Sections/Labels.php:28
 msgid "You can change all static text of the theme."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:43
+#: ../inc/Api/Customizer/Sections/Labels.php:44
 msgid "Header Labels"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:48
+#: ../inc/Api/Customizer/Sections/Labels.php:49
 msgid "Menu Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:49
+#: ../inc/Api/Customizer/Sections/Labels.php:50
 msgid "Content: Menu Button"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:54, ../inc/Api/Customizer/Sections/Labels.php:55
+#: ../inc/Api/Customizer/Sections/Labels.php:55, ../inc/Api/Customizer/Sections/Labels.php:56
 msgid "Log In"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:56
+#: ../inc/Api/Customizer/Sections/Labels.php:57
 msgid "Content: SignIn Button"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:61, ../inc/Api/Customizer/Sections/Labels.php:62
+#: ../inc/Api/Customizer/Sections/Labels.php:62, ../inc/Api/Customizer/Sections/Labels.php:63
 msgid "Get Started"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:63
+#: ../inc/Api/Customizer/Sections/Labels.php:64
 msgid "Content: Get Started"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:69, ../inc/Api/Customizer/Sections/Labels.php:70
+#: ../inc/Api/Customizer/Sections/Labels.php:70, ../inc/Api/Customizer/Sections/Labels.php:71
 msgid "Contact Info"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:71
+#: ../inc/Api/Customizer/Sections/Labels.php:72
 msgid "Content: Contact Info"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:76, ../inc/Api/Customizer/Sections/Labels.php:77
+#: ../inc/Api/Customizer/Sections/Labels.php:77, ../inc/Api/Customizer/Sections/Labels.php:78
 msgid "Follow Us On"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:78
+#: ../inc/Api/Customizer/Sections/Labels.php:79
 msgid "Content: Follow Us On"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:83
+#: ../inc/Api/Customizer/Sections/Labels.php:84
 msgid "About Us"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:84
+#: ../inc/Api/Customizer/Sections/Labels.php:85
 msgid "Content: About Us"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:89
+#: ../inc/Api/Customizer/Sections/Labels.php:90
 msgid "About Text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:90
+#: ../inc/Api/Customizer/Sections/Labels.php:91
 msgid "Enter about text here."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:95
+#: ../inc/Api/Customizer/Sections/Labels.php:96
 msgid "Footer Labels"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:100
+#: ../inc/Api/Customizer/Sections/Labels.php:101
 msgid "Are You Ready"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:101
+#: ../inc/Api/Customizer/Sections/Labels.php:102
 msgid "ARE YOU READY TO GET STARTED?"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:102
+#: ../inc/Api/Customizer/Sections/Labels.php:103
 msgid "Content: Footer Are You Ready"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:107, ../inc/Api/Customizer/Sections/Labels.php:108
+#: ../inc/Api/Customizer/Sections/Labels.php:108, ../inc/Api/Customizer/Sections/Labels.php:109
 msgid "Contact Us"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:109
+#: ../inc/Api/Customizer/Sections/Labels.php:110
 msgid "Content: Footer contact button"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:114
+#: ../inc/Api/Customizer/Sections/Labels.php:115
 msgid "Blog Labels"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:120
+#: ../inc/Api/Customizer/Sections/Labels.php:121
 msgid "Content: Meta Author Prefix"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:124, ../inc/Api/Customizer/Sections/Labels.php:125
+#: ../inc/Api/Customizer/Sections/Labels.php:125, ../inc/Api/Customizer/Sections/Labels.php:126
 msgid "Tags:"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:126
+#: ../inc/Api/Customizer/Sections/Labels.php:127
 msgid "Content: Single blog footer tags label"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:130, ../inc/Api/Customizer/Sections/Labels.php:131
+#: ../inc/Api/Customizer/Sections/Labels.php:131, ../inc/Api/Customizer/Sections/Labels.php:132
 msgid "Socials:"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:132
+#: ../inc/Api/Customizer/Sections/Labels.php:133
 msgid "Content: Single blog footer Socials label"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:136
+#: ../inc/Api/Customizer/Sections/Labels.php:137
 msgid "Blog Read More:"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:137
+#: ../inc/Api/Customizer/Sections/Labels.php:138
 msgid "Continue Reading"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Labels.php:138
+#: ../inc/Api/Customizer/Sections/Labels.php:139
 msgid "Content: Single blog footer read more text"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsBlogs.php:30
+#: ../inc/Api/Customizer/Sections/LayoutsBlogs.php:31
 msgid "Blog Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsError.php:30
+#: ../inc/Api/Customizer/Sections/LayoutsError.php:31
 msgid "Error Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsPage.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsPage.php:32
 msgid "Page Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsProject.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsProject.php:32
 msgid "Project Archive Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsProjectSingle.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsProjectSingle.php:32
 msgid "Project Single Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsService.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsService.php:32
 msgid "Service Archive Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsServiceSingle.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsServiceSingle.php:32
 msgid "Service Single Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsSingle.php:30
+#: ../inc/Api/Customizer/Sections/LayoutsSingle.php:31
 msgid "Single Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsTeam.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsTeam.php:32
 msgid "Team Archive Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsTeamSingle.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsTeamSingle.php:32
 msgid "Team Single Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsWooArchive.php:30
+#: ../inc/Api/Customizer/Sections/LayoutsWooArchive.php:31
 msgid "Woocommerce Archive"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/LayoutsWooSingle.php:31
+#: ../inc/Api/Customizer/Sections/LayoutsWooSingle.php:32
 msgid "Woocommerce Single"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:28
+#: ../inc/Api/Customizer/Sections/Project.php:29
 msgid "Project Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:29
+#: ../inc/Api/Customizer/Sections/Project.php:30
 msgid "Project Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:45
+#: ../inc/Api/Customizer/Sections/Project.php:46
 msgid "Project Archive Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:50
+#: ../inc/Api/Customizer/Sections/Project.php:51
 msgid "Project Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:51
+#: ../inc/Api/Customizer/Sections/Project.php:52
 msgid "This option works only for project layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:54
+#: ../inc/Api/Customizer/Sections/Project.php:55
 msgid "Project 01"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:55
+#: ../inc/Api/Customizer/Sections/Project.php:56
 msgid "Project 02"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:61
+#: ../inc/Api/Customizer/Sections/Project.php:62
 msgid "Archive Item Limit"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:67
+#: ../inc/Api/Customizer/Sections/Project.php:68
 msgid "Image Filter"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:71
+#: ../inc/Api/Customizer/Sections/Project.php:72
 msgid "Grayscale"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:77, ../inc/Api/Customizer/Sections/Project.php:137
+#: ../inc/Api/Customizer/Sections/Project.php:78, ../inc/Api/Customizer/Sections/Project.php:138
 msgid "Category Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:83
+#: ../inc/Api/Customizer/Sections/Project.php:84
 msgid "Button Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:89, ../inc/Api/Customizer/Sections/Service.php:68, ../inc/Api/Customizer/Sections/Team.php:80
+#: ../inc/Api/Customizer/Sections/Project.php:90, ../inc/Api/Customizer/Sections/Service.php:69, ../inc/Api/Customizer/Sections/Team.php:81
 msgid "Excerpt Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:102, ../inc/Api/Customizer/Sections/Service.php:87, ../inc/Api/Customizer/Sections/Team.php:93
+#: ../inc/Api/Customizer/Sections/Project.php:103, ../inc/Api/Customizer/Sections/Service.php:88, ../inc/Api/Customizer/Sections/Team.php:94
 msgid "Archive Banner Title"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:103
+#: ../inc/Api/Customizer/Sections/Project.php:104
 msgid "Our Projects"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:108, ../inc/Api/Customizer/Sections/Service.php:93, ../inc/Api/Customizer/Sections/Team.php:99
+#: ../inc/Api/Customizer/Sections/Project.php:109, ../inc/Api/Customizer/Sections/Service.php:94, ../inc/Api/Customizer/Sections/Team.php:100
 msgid "Archive Slug"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:114, ../inc/Api/Customizer/Sections/Service.php:99, ../inc/Api/Customizer/Sections/Team.php:105
+#: ../inc/Api/Customizer/Sections/Project.php:115, ../inc/Api/Customizer/Sections/Service.php:100, ../inc/Api/Customizer/Sections/Team.php:106
 msgid "Category Slug"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:120
+#: ../inc/Api/Customizer/Sections/Project.php:121
 msgid "Project Single Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:125
+#: ../inc/Api/Customizer/Sections/Project.php:126
 msgid "Info Title Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:131
+#: ../inc/Api/Customizer/Sections/Project.php:132
 msgid "Text Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:143
+#: ../inc/Api/Customizer/Sections/Project.php:144
 msgid "Client Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:149
+#: ../inc/Api/Customizer/Sections/Project.php:150
 msgid "Start Time Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:154, ../views/content-single-project.php:48, ../views/content-single-team.php:62
+#: ../inc/Api/Customizer/Sections/Project.php:155, ../views/content-single-project.php:52, ../views/content-single-team.php:66
 msgid "Location"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:165
+#: ../inc/Api/Customizer/Sections/Project.php:166
 msgid "End Time Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:171
+#: ../inc/Api/Customizer/Sections/Project.php:172
 msgid "Weblink Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:177
+#: ../inc/Api/Customizer/Sections/Project.php:178
 msgid "Rating Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:201
+#: ../inc/Api/Customizer/Sections/Project.php:183
+msgid "Show Pagination"
+msgstr ""
+
+#: ../inc/Api/Customizer/Sections/Project.php:189
+msgid "Previous Project Text"
+msgstr ""
+
+#: ../inc/Api/Customizer/Sections/Project.php:195
+msgid "Next Project Text"
+msgstr ""
+
+#: ../inc/Api/Customizer/Sections/Project.php:202
 msgid "Project Single Related Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:212
+#: ../inc/Api/Customizer/Sections/Project.php:213
 msgid "Project Related Title"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:213
+#: ../inc/Api/Customizer/Sections/Project.php:214
 msgid "Related Projects"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:226
+#: ../inc/Api/Customizer/Sections/Project.php:227
 msgid "Related Title Limit"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:234
+#: ../inc/Api/Customizer/Sections/Project.php:235
 msgid "Project Query Type"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Project.php:247
+#: ../inc/Api/Customizer/Sections/Project.php:248
 msgid "Display Project Order"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:29
+#: ../inc/Api/Customizer/Sections/Service.php:30
 msgid "Service Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:30
+#: ../inc/Api/Customizer/Sections/Service.php:31
 msgid "Service Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:46
+#: ../inc/Api/Customizer/Sections/Service.php:47
 msgid "Service Archive Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:51
+#: ../inc/Api/Customizer/Sections/Service.php:52
 msgid "Service Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:52
+#: ../inc/Api/Customizer/Sections/Service.php:53
 msgid "This service 02 layout only icon show"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:55
+#: ../inc/Api/Customizer/Sections/Service.php:56
 msgid "Service 01"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:56
+#: ../inc/Api/Customizer/Sections/Service.php:57
 msgid "Service 02"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:62
+#: ../inc/Api/Customizer/Sections/Service.php:63
 msgid "Service Archive Item Limit"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:81
+#: ../inc/Api/Customizer/Sections/Service.php:82
 msgid "Read More Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:88
+#: ../inc/Api/Customizer/Sections/Service.php:89
 msgid "Our Services"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:105
+#: ../inc/Api/Customizer/Sections/Service.php:106
 msgid "Service Single Related Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:116
+#: ../inc/Api/Customizer/Sections/Service.php:117
 msgid "Service Related Title"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:117
+#: ../inc/Api/Customizer/Sections/Service.php:118
 msgid "Related Service"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:131
+#: ../inc/Api/Customizer/Sections/Service.php:132
 msgid "Service Query Type"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Service.php:144
+#: ../inc/Api/Customizer/Sections/Service.php:145
 msgid "Display Service Order"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:36
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:37
 msgid "Main Logo"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:37
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:38
 msgid "Upload main logo for your site."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:43, ../inc/Api/Customizer/Sections/SiteIdentity.php:45
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:44, ../inc/Api/Customizer/Sections/SiteIdentity.php:46
 msgid "Light Logo"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:44
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:45
 msgid "Upload light logo for transparent header. It should a white logo"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:50, ../inc/Api/Customizer/Sections/SiteIdentity.php:52
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:51, ../inc/Api/Customizer/Sections/SiteIdentity.php:53
 msgid "Mobile Logo"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:51
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:52
 msgid "Upload, if you need a different logo for mobile device.."
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:57
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:58
 msgid "Main Logo Dimension"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:58, ../inc/Api/Customizer/Sections/SiteIdentity.php:65
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:59, ../inc/Api/Customizer/Sections/SiteIdentity.php:66
 msgid "Enter the width and height value separate by comma (,). Eg. 120px,45px"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/SiteIdentity.php:64
+#: ../inc/Api/Customizer/Sections/SiteIdentity.php:65
 msgid "Mobile Logo Dimension"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Socials.php:29
+#: ../inc/Api/Customizer/Sections/Socials.php:30
 msgid "Socials Information"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Socials.php:30
+#: ../inc/Api/Customizer/Sections/Socials.php:31
 msgid "Socials Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:29
+#: ../inc/Api/Customizer/Sections/Team.php:30
 msgid "Team Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:30
+#: ../inc/Api/Customizer/Sections/Team.php:31
 msgid "Team Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:46
+#: ../inc/Api/Customizer/Sections/Team.php:47
 msgid "Team Archive Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:51
+#: ../inc/Api/Customizer/Sections/Team.php:52
 msgid "Team Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:52
+#: ../inc/Api/Customizer/Sections/Team.php:53
 msgid "This option works only for team layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:55
+#: ../inc/Api/Customizer/Sections/Team.php:56
 msgid "Team 01"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:56
+#: ../inc/Api/Customizer/Sections/Team.php:57
 msgid "Team 02"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:62
+#: ../inc/Api/Customizer/Sections/Team.php:63
 msgid "Team Archive Item Limit"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:68
+#: ../inc/Api/Customizer/Sections/Team.php:69
 msgid "Designation Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:74, ../inc/Api/Customizer/Sections/Team.php:142
+#: ../inc/Api/Customizer/Sections/Team.php:75, ../inc/Api/Customizer/Sections/Team.php:143
 msgid "Social Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:94
+#: ../inc/Api/Customizer/Sections/Team.php:95
 msgid "Our Teams"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:100
+#: ../inc/Api/Customizer/Sections/Team.php:101
 msgid "team"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:111
+#: ../inc/Api/Customizer/Sections/Team.php:112
 msgid "Team Single Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:116
+#: ../inc/Api/Customizer/Sections/Team.php:117
 msgid "Team Author Layout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:119
+#: ../inc/Api/Customizer/Sections/Team.php:120
 msgid "Thumb Square"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:120
+#: ../inc/Api/Customizer/Sections/Team.php:121
 msgid "Thumb Round"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:126
+#: ../inc/Api/Customizer/Sections/Team.php:127
 msgid "Team Author Order"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:129
+#: ../inc/Api/Customizer/Sections/Team.php:130
 msgid "Thumb Left"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:130
+#: ../inc/Api/Customizer/Sections/Team.php:131
 msgid "Thumb Right"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:136
+#: ../inc/Api/Customizer/Sections/Team.php:137
 msgid "Info Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:148
+#: ../inc/Api/Customizer/Sections/Team.php:149
 msgid "Skill Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:154
+#: ../inc/Api/Customizer/Sections/Team.php:155
 msgid "Contact Visibility"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:160
+#: ../inc/Api/Customizer/Sections/Team.php:161
 msgid "Team Contact Title"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:161
+#: ../inc/Api/Customizer/Sections/Team.php:162
 msgid "Team Contact"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:167
+#: ../inc/Api/Customizer/Sections/Team.php:168
 msgid "Team Single Related Option"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:178
+#: ../inc/Api/Customizer/Sections/Team.php:179
 msgid "Team Related Title"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:179
+#: ../inc/Api/Customizer/Sections/Team.php:180
 msgid "Related Team"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:193
+#: ../inc/Api/Customizer/Sections/Team.php:194
 msgid "Team Query Type"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/Team.php:206
+#: ../inc/Api/Customizer/Sections/Team.php:207
 msgid "Display Team Order"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyBody.php:27, ../inc/Api/Customizer/Sections/TypographyBody.php:46
+#: ../inc/Api/Customizer/Sections/TypographyBody.php:28, ../inc/Api/Customizer/Sections/TypographyBody.php:47
 msgid "Body Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyBody.php:28
+#: ../inc/Api/Customizer/Sections/TypographyBody.php:29
 msgid "Body Typography Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:27
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:28
 msgid "Heading Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:28
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:29
 msgid "Heading Typography Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:46
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:47
 msgid "All Headings Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:59
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:60
 msgid "H1 Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:72
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:73
 msgid "H2 Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:85
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:86
 msgid "H3 Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:98
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:99
 msgid "H4 Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:111
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:112
 msgid "H5 Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyHeading.php:124
+#: ../inc/Api/Customizer/Sections/TypographyHeading.php:125
 msgid "H6 Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyMenu.php:27, ../inc/Api/Customizer/Sections/TypographyMenu.php:46
+#: ../inc/Api/Customizer/Sections/TypographyMenu.php:28, ../inc/Api/Customizer/Sections/TypographyMenu.php:47
 msgid "Menu Typography"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/TypographyMenu.php:28
+#: ../inc/Api/Customizer/Sections/TypographyMenu.php:29
 msgid "Menu Typography Section"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/WooArchiveSettings.php:18
+#: ../inc/Api/Customizer/Sections/WooArchiveSettings.php:19
 msgid "Woocommerce Settings"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/WooArchiveSettings.php:19
+#: ../inc/Api/Customizer/Sections/WooArchiveSettings.php:20
 msgid "techly Woocommerce Archive Settings"
 msgstr ""
 
@@ -2615,7 +2637,7 @@ msgstr ""
 msgid "Quick Checkout"
 msgstr ""
 
-#: ../inc/Api/Customizer/Sections/WooArchiveSettings.php:91, ../views/content-single-project.php:63
+#: ../inc/Api/Customizer/Sections/WooArchiveSettings.php:91, ../views/content-single-project.php:67
 msgid "Rating"
 msgstr ""
 
@@ -2647,87 +2669,87 @@ msgstr ""
 msgid "Shop Page"
 msgstr ""
 
-#: ../page-templates/rt-icons.php:3
+#: ../page-templates/rt-icons.php:6
 msgid "RT Icons"
 msgstr ""
 
-#: ../page-templates/template-fullwidth.php:3
+#: ../page-templates/template-fullwidth.php:6
 msgid "Fullwidth Template"
 msgstr ""
 
-#: ../searchform.php:11
+#: ../searchform.php:14
 msgid "Search here ..."
 msgstr ""
 
-#: ../views/content-banner.php:81
+#: ../views/content-banner.php:85
 msgid "Our Recent Posts"
 msgstr ""
 
-#: ../views/content-banner.php:64
+#: ../views/content-banner.php:68
 msgid "All Posts"
 msgstr ""
 
-#: ../views/content-banner.php:57
+#: ../views/content-banner.php:61
 msgid "Search Results for : "
 msgstr ""
 
-#: ../views/content-none.php:14
+#: ../views/content-none.php:17
 msgid "Nothing Found"
 msgstr ""
 
-#: ../views/content-none.php:50
+#: ../views/content-none.php:53
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: ../views/content-none.php:41
+#: ../views/content-none.php:44
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: ../views/content-none.php:27
+#: ../views/content-none.php:30
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: ../views/content-page.php:20, ../views/content-search.php:43
+#: ../views/content-page.php:23, ../views/content-search.php:46
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post.
-#: ../views/content-search.php:30
+#: ../views/content-search.php:33
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: ../views/content-single-project.php:46
+#: ../views/content-single-project.php:50
 msgid "Client"
 msgstr ""
 
-#: ../views/content-single-project.php:54
+#: ../views/content-single-project.php:58
 msgid "Start Date"
 msgstr ""
 
-#: ../views/content-single-project.php:56
+#: ../views/content-single-project.php:60
 msgid "Handover"
 msgstr ""
 
-#: ../views/content-single-project.php:58
+#: ../views/content-single-project.php:62
 msgid "Web Link"
 msgstr ""
 
-#: ../views/content-single-team.php:57
+#: ../views/content-single-team.php:61
 msgid "E-mail"
 msgstr ""
 
-#: ../views/content-single-team.php:73
+#: ../views/content-single-team.php:77
 msgid "Age"
 msgstr ""
 
-#: ../views/content-single-team.php:78
+#: ../views/content-single-team.php:82
 msgid "Qualification"
 msgstr ""
 
-#: ../views/custom/single-pagination.php:24
+#: ../views/custom/single-pagination.php:28
 msgid "Previous Post: "
 msgstr ""
 
-#: ../views/custom/single-pagination.php:41
+#: ../views/custom/single-pagination.php:45
 msgid "Next Post: "
 msgstr ""

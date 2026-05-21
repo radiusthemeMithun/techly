@@ -4288,7 +4288,7 @@ button {
   border-radius: 500px;
   cursor: pointer;
   color: #FFFFFF;
-  padding: 5px 30px 5px 5px;
+  padding: 5px 24px 5px 5px;
   text-transform: capitalize;
   text-decoration: none;
   text-shadow: none;
@@ -4388,8 +4388,8 @@ button {
 }
 
 .rt-button-icon {
-  height: 50px;
-  width: 50px;
+  height: 42px;
+  width: 42px;
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -4400,8 +4400,8 @@ button {
 .btn-icon-wrapper {
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -4500,7 +4500,7 @@ button {
 }
 
 .button-4 {
-  padding: 14px 30px;
+  padding: 13px 24px;
   font-weight: 500;
 }
 
@@ -12950,8 +12950,8 @@ Fluent form style
   z-index: 1;
 }
 .rt-video-icon .video-popup-icon {
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
   border-radius: 100%;
   background-color: #FFFFFF;
   color: var(--rt-primary-color);
@@ -12974,7 +12974,7 @@ Fluent form style
 .rt-video-icon .button-text {
   margin-right: 24px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--rt-meta-color);
   font-weight: 800;
 }

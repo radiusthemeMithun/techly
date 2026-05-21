@@ -608,11 +608,11 @@ if ( ! function_exists( 'techly_get_social_html' ) ) {
 			}
 			?>
 			<a target="_blank" href="<?php echo esc_url( $item['url'] ) ?>" aria-label="social link">
-				echo wp_kses( techly_get_svg( $id ), techly_kses_svg_allowed_tags() );
+				<?php echo techly_get_svg( $id ); ?>
 			</a>
 			<?php
 		}
-		echo wp_kses_post( ob_get_clean() );
+		echo ob_get_clean();
 	}
 }
 
