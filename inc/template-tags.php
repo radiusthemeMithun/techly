@@ -1081,7 +1081,7 @@ if ( ! function_exists( 'techly_entry_footer' ) ) {
 									</span>
 								</span>
 							</span>
-							<span class="button-text"><?php echo wp_kses_post( techly_readmore_text() ) ?></span>
+							<span class="button-text"><?php echo techly_readmore_text() ?></span>
 						</span>
 					</a>
 				</footer>
